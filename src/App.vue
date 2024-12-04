@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="app" >
     <!-- <h1 class="text-8xl font-black text-emerald-800">{{ title }}</h1> -->
     
-    <!-- NAVBAR -->
-    <!-- Iconos redes sociales -->
+<!-- NAVBAR -->
+<!-- Iconos redes sociales -->
     <div class="SocialMedia bg-amber-300 flex flex-row justify-center gap-4 items-center py-2">
       <button class="Instagram">☺️</button>
       <button class="Facebook">☺️</button>
@@ -20,74 +20,15 @@
       <button class="tienda"> Tienda </button>
       <button class="contacto"> Contacto</button>
     </nav>
-    <!-- FIN NAVBAR -->
+<!-- FIN NAVBAR -->
 
-  <!-- Main -->
-  <div class="main border-cyan-900 border-2" >
-  <div class="mainConocenos bg-amber-300 flex flex-col justify-center items-center">
-    <p>Conócenos</p>
-
-  </div>
-
-  <div class="mainHabitantes bg-cyan-200 flex flex-col justify-center items-center " >
-    <p> Habitantes</p>
-    <div class="grid grid-cols-4 bg-pink-500 gap-8" >
-      <div class="uno bg-slate-200" >1</div>
-      <div class="dos bg-slate-200" >2</div>
-      <div class="tres bg-slate-200" >3</div>
-      <div class="cuatro bg-slate-200" >4</div>
-      <div class="cinco bg-slate-200" >5</div>
-      <div class="seis bg-slate-200" >6</div>
-    </div>
-    
-  </div>
-
-  <div class="mainColabora bg-cyan-400 flex flex-col justify-center items-center" >
-    <p> Colabora</p>
-  </div>
-
-  <div class="mainEduca bg-green-200 flex flex-col justify-center items-center" >
-    <p>Educa</p>
-  </div>
-
-  <div class="mainReceta bg-green-400 flex flex-col justify-center items-center"  >
-    <p>Recetas</p>
-  </div>
-
-  <div class="mainNoticias bg-violet-300 flex flex-col justify-center items-center" >
-    <p>Noticias</p>
-  </div>
-
-  <div class="mainTienda bg-violet-500 flex flex-col justify-center items-center">
-    <p>Tienda</p>
-  </div>
-
-  <div class="mainContacto bg-teal-300 flex flex-col justify-center items-center" >
-    <p>Contacto</p>
-  </div>
-
-  <div></div>
-
-  <div></div>
-</div>
-
-
-<div>
-  <footer class="footer bg-gray-200">
+<!-- FOOTER -->
+<div class="footerGrid flex items-center">
+  <footer class="footer bg-gray-200 grid grid-cols-4 mt-auto">
+    <!-- mt-auto = margin top auto: hace que se ajuste al final del contenedo principal -->
     <p>Copyright 2024</p>
   </footer>
 </div>
-
-  
-
-    
-
-    
-
-    <h2 class="text-6xl text-pink-700">bon dia</h2>
-    <h3>hola hola!</h3>
-
-
 
     <Router-view/>
     
@@ -107,5 +48,19 @@ export default {
 </script>
 
 <style>
-  
+  .app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    /* 100vh:asegura que el contenedor principal tenga un alto mínimo igual al 100% de la viewport visible */
+    /* display:flex y flex-direction:column permite organizar los elementos en una columna vertical */
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* position:fixed asegura que el footer se mantenga en la misma posición, incluso cuando se hace scroll */
+  }
 </style>
