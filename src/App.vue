@@ -5,6 +5,7 @@
     <p>Santuario</p>
 
     <h2 class="text-6xl text-pink-700">bon dia</h2>
+    <h3>hola hola!</h3>
 
 
     <Router-view/>
