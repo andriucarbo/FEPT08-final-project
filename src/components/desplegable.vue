@@ -164,8 +164,10 @@ export default {
 
 <style>
     .navbar {
-        background-color: #C7963e;
+        background-color: #e2d9c7;
+        font-family: 'Crimson Text', serif;
     }
+    
 
     
 </style>
@@ -173,18 +175,4 @@ export default {
 
 
 
-<!-- Paso 1) Creación de botones y lista de opciones desplegable dentro de src>components>desplegable>template
- Paso 2) Creación de la función toggleDropdown en src>components>desplegable>script
- Para crear el menú desplegable, se utiliza el atributo v-if para mostrar o ocultar menú
- Paso 3) Creación de la función closeDropdown en src>components>desplegable>
- Paso 4) Creación de la función mounted en src>components>desplegable>script
- Paso 5) Creación de la función beforeDestroy en src>components>desplegable>script
- Paso 6) Creación de la función closeDropdown en src>components>desplegable>
 
-  **en todo el espacio(<div></div>) de la NavBar no se aplica el closeDropdown**
- 
- Paso 7) Ir a App.vue
- 
-
-
--->

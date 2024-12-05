@@ -1,0 +1,26 @@
+
+
+<!-- Paso 1) Creación de botones y lista de opciones desplegable dentro de src>components>desplegable>template
+ Paso 2) Creación de la función toggleDropdown en src>components>desplegable>script
+ Para crear el menú desplegable, se utiliza el atributo v-if para mostrar o ocultar menú
+ Paso 3) Creación de la función closeDropdown en src>components>desplegable>
+ Paso 4) Creación de la función mounted en src>components>desplegable>script
+ Paso 5) Creación de la función beforeDestroy en src>components>desplegable>script
+ Paso 6) Creación de la función closeDropdown en src>components>desplegable>
+
+  **en todo el espacio(<div></div>) de la NavBar no se aplica el closeDropdown**
+ 
+Paso 7) Ir a App.vue
+Pasos del desplegable (continuación de la explicación)
+Paso 7) Primero hemos importado el desplegable en el archivo App.vue en la parte del <script></script>
+Paso 8) Luego hemos agregado el componente <desplegable/> en el apartado <template>
+Paso 9) Dentro de <script> hemos incluido componentes: { desplegable } para que el componente se pueda utilizar en el archivo App.vue
+
+
+Tipografía:
+Hemos descargado la tipografía Crimson Text desde Googlefonts copiando el <link> y pegandolo en el head del archivo index.html
+luego hemos ido a style.css, hemos incluido la classe Crimson-text-regular con sus características y como último paso hemos añadido en desplegable.vue en el apartado <style>, la clase Navbar, la font-family Crimson.
+-->
+ 
+
+

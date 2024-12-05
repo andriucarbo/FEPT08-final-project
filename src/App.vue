@@ -61,21 +61,18 @@ export default {
     /* position:fixed asegura que el footer se mantenga en la misma posición, incluso cuando se hace scroll */
   }
 
-  .SocialMedia {
-    background-color: #C7963e;
-  }
+.app {
+  /*color fondo de toda la página*/
+  background-color: #e2d9c7;
+}
 
 
 </style>
 
 
-<!-- Pasos del desplegable (continuación de la explicación)
-Paso 7) Primero hemos importado el desplegable en el archivo App.vue en la parte del <script></script>
-Paso 8) Luego hemos agregado el componente <desplegable/> en el apartado <template>
-Paso 9) Dentro de <script> hemos incluido componentes: { desplegable } para que el componente se pueda utilizar en el archivo App.vue
 
 
 
 
--->
+
 

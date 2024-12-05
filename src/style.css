@@ -3,3 +3,16 @@
 @tailwind utilities;
 
 /* aquí pondré propiedades de CSS si quiero y la directiva @apply de tailwind para agrupar clases */
+
+/* @font-face {
+    font-family: 'Crimson';
+    src: url('./assets/Tipografias/Crimson_Text/CrimsonText-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
