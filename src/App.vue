@@ -1,24 +1,19 @@
 <template>
   <div class="app" >
+
     <!-- <h1 class="text-8xl font-black text-emerald-800">{{ title }}</h1> -->
     
 <!-- NAVBAR -->
 <!-- Iconos redes sociales -->
-    <div class="SocialMedia bg-amber-300 flex flex-row justify-center gap-4 items-center py-2">
+    <div class="SocialMedia flex flex-row justify-center gap-4 items-center py-2">
       <button class="Instagram">☺️</button>
       <button class="Facebook">☺️</button>
       <button class="Twitter">☺️</button>
     </div>
-    <nav class="navbar bg-amber-500 flex justify-center gap-8 items-center">
+    
+    <nav class="navbar bg-amber-500 flex justify-center gap- items-center">
       <img class="logotipo rounded-full w-24 h-24 ml-6" src="../public/LogoProvisional.png" alt="logo provisional">
-      <button class="conocenos">Conócenos</button>
-      <button class="habitantes">Habitantes</button>
-      <button class="colabora" >Colabora</button>
-      <button class="educa">Educa</button>
-      <button class="recetas">Recetas</button>
-      <button class="noticias">Noticias</button>
-      <button class="tienda"> Tienda </button>
-      <button class="contacto"> Contacto</button>
+      <desplegable/> 
     </nav>
 <!-- FIN NAVBAR -->
 
@@ -36,8 +31,10 @@
 </template>
 
 <script>
+import desplegable from './components/desplegable.vue';
 export default {
   name:"App",
+  components: { desplegable },
   data(){
     return{
       title:"holaaa! 🐷🐷 "
@@ -63,4 +60,22 @@ export default {
     right: 0;
     /* position:fixed asegura que el footer se mantenga en la misma posición, incluso cuando se hace scroll */
   }
+
+  .SocialMedia {
+    background-color: #C7963e;
+  }
+
+
 </style>
+
+
+<!-- Pasos del desplegable (continuación de la explicación)
+Paso 7) Primero hemos importado el desplegable en el archivo App.vue en la parte del <script></script>
+Paso 8) Luego hemos agregado el componente <desplegable/> en el apartado <template>
+Paso 9) Dentro de <script> hemos incluido componentes: { desplegable } para que el componente se pueda utilizar en el archivo App.vue
+
+
+
+
+-->
+
