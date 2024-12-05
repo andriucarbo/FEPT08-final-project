@@ -122,8 +122,6 @@
     </div> -->
 
 </div>
-
-<!-- Agrega más botones según sea necesario -->
 </nav>
 
         
