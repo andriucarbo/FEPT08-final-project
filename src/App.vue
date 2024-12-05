@@ -34,7 +34,7 @@
 import desplegable from './components/desplegable.vue';
 export default {
   name:"App",
-  components: { desplegable },
+  components: { desplegable, },
   data(){
     return{
       title:"holaaa! 🐷🐷 "
