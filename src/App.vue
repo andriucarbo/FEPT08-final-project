@@ -12,10 +12,19 @@
     </div>
     
     <nav class="navbar bg-amber-500 flex justify-center gap- items-center">
-      <img class="logotipo rounded-full w-24 h-24 ml-6" src="../public/LogoProvisional.png" alt="logo provisional">
+      <img class="logotipo rounded-full w-24 h-24 ml-6" src="/LogoProvisional.png" alt="logo provisional">
       <desplegable/> 
     </nav>
 <!-- FIN NAVBAR -->
+
+<!-- BOTÓN FIJO LATERAL DERECHO SOCIAL MEDIA -->
+<div class="fixed right-4 bottom-4 flex space-x-4">
+  <button class="w-32 h-12 bg-[#857a5c] text-white rounded">Dona</button>
+  <button class="w-32 h-12 bg-[#857a5c] text-white rounded">
+    <span class="material-symbols-outlined">Síguenos</span>
+  </button>
+</div>
+
 
 <!-- FOOTER -->
 <div class="footerGrid flex items-center">
