@@ -15,12 +15,21 @@
     </div>
 
     <!-- Apartado carrusel Nuestros valores -->
-    <div class="mainValores bg-cyan-400 flex flex-col justify-center items-center" >
+    <div class="mainValores flex flex-col justify-center items-center" >
         <p> Nuestros valores</p>
-        <div>
-        
-        
-  </div>
+        <carousel 
+            @next="next"
+            @prev="prev"
+        >
+            <carousel-slide v-for="(slide, index) in slides" 
+                :key="slide" 
+                :index="index"
+                :visibleSlide="visibleSlide"
+                :direction="direction"
+                >
+                <img :src="slide" />
+            </carousel-slide>
+        </carousel>
     </div>
 
     <!-- Apartado Conoce a nuestros habitantes -->
@@ -123,9 +132,50 @@
 
     
 import CardHabitantes from './CardHabitantes.vue';
+import Carousel from '../components/Carousel.vue';
+import CarouselSlide from '../components/CarouselSlide.vue';    
 export default {
     name: "Home",
-    components: {CardHabitantes},
+    components: {CardHabitantes, Carousel, CarouselSlide },
+    data(){
+        return{
+            slides: [
+                'https://picsum.photos/id/237/600/300',
+                'https://picsum.photos/id/236/600/300',
+                'https://picsum.photos/id/235/600/300',
+                'https://picsum.photos/id/234/600/300',
+                'https://picsum.photos/id/233/600/300',
+                'https://picsum.photos/id/232/600/300',
+                
+
+            ],
+            visibleSlide : 0, //en el principio muestrame la primera imagen
+            direction: 'left',
+        }
+    },
+    computed: {
+        slidesLen(){
+            return this.slides.length;
+        }
+    },
+    methods: {
+        next(){
+            if(this.visibleSlide >= this.slidesLen - 1){
+                this.visibleSlide = 0;
+            }else{
+                this.visibleSlide++;
+            }
+            this.direction = "left"
+        },
+        prev(){
+            if(this.visibleSlide <= 0){
+                this.visibleSlide = this.slidesLen - 1;
+            }else{
+                this.visibleSlide--;
+            }
+            this.direction = "right"
+        }
+    },
 }
 </script>
 
