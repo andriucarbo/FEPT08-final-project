@@ -19,8 +19,8 @@
 
 <!-- BOTÓN FIJO LATERAL DERECHO SOCIAL MEDIA -->
 <div class="fixed right-4 bottom-4 flex space-x-4">
-  <button class="w-32 h-12 bg-[#857a5c] text-white rounded">Dona</button>
-  <button class="w-32 h-12 bg-[#857a5c] text-white rounded">
+  <button class="w-32 h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">Dona</button>
+  <button class="w-32 h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">
     <span class="material-symbols-outlined">Síguenos</span>
   </button>
 </div>
@@ -28,7 +28,7 @@
 
 <!-- FOOTER -->
 <div class="footerGrid flex items-center">
-  <footer class="footer bg-gray-200 grid grid-cols-4 mt-auto">
+  <footer class="footer bg-[#47462d] grid grid-cols-4 mt-auto">
     <!-- mt-auto = margin top auto: hace que se ajuste al final del contenedo principal -->
     <p>Copyright 2024</p>
   </footer>
