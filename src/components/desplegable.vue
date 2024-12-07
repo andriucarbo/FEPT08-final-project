@@ -1,12 +1,13 @@
 <template>
 <div>
-        <nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10">
+
+<nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10">
 <!-- Botón con menú desplegable -->
 <div class="relative">
-    <button class="conocenos px-4 py-2 hover: border-4 border-transparent border-b-orange-700 rounded" 
+    <button class="conocenos px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
     @click="toggleDropdown('conocenos')">Conócenos</button>
 
-    <!-- Menú desplegable -->
+    
     <div v-if="activeDropdown === 'conocenos'" 
     class="absolute left-0 mt-2 bg-white shadow-lg rounded w-48">
     <ul class="flex flex-col">
@@ -17,9 +18,9 @@
     </div>
 </div>
 
-<!-- Repite el mismo patrón para otros botones --> 
+
 <div class="relative">
-    <button class="habitantes px-4 py-2  hover:bg-amber-300 rounded" 
+    <button class="habitantes px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
     @click="toggleDropdown('habitantes')">Habitantes</button>
 
     <div v-if="activeDropdown === 'habitantes'" 
@@ -32,7 +33,7 @@
 </div>
 
 <div class="relative">
-    <button class="colabora px-4 py-2 hover:bg-amber-300 rounded" 
+    <button class="colabora px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
     @click="toggleDropdown('colabora')">Colabora</button>
 
     <div v-if="activeDropdown === 'colabora'" 
@@ -48,7 +49,7 @@
 </div>
 
 <div class="relative">
-    <button class="educa px-4 py-2 hover:bg-amber-300 rounded" 
+    <button class="educa px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
     @click="toggleDropdown('educa')">Educa</button>
 
     <div v-if="activeDropdown === 'educa'" 
@@ -64,7 +65,7 @@
 </div>
 
 <div class="relative">
-    <button class="recetas px-4 py-2 hover:bg-amber-300 rounded" 
+    <button class="recetas px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
     @click="toggleDropdown('recetas')">Recetas</button>
 
     <div v-if="activeDropdown === 'recetas'" 
@@ -77,7 +78,7 @@
 </div>
 
 <div class="relative">
-    <button class="noticias px-4 py-2 hover:bg-amber-300 rounded" 
+    <button class="noticias px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
     @click="toggleDropdown('noticias')">Noticias</button>
     
 
@@ -92,7 +93,7 @@
 </div>
 
 <div class="relative">
-    <button class="tienda px-4 py-2 hover:bg-amber-300 rounded" 
+    <button  class="tienda px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
     @click="toggleDropdown('tienda')">Tienda</button>
 
     <div v-if="activeDropdown === 'tienda'" 
@@ -108,7 +109,7 @@
 </div>
 
 <div class="relative">
-    <button class="contacto px-4 py-2 hover:bg-amber-300 rounded" 
+    <button class="contacto px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
     @click="contacto">Contacto</button>
 
     <!-- <div v-if="activeDropdown === 'contacto'" 
@@ -165,9 +166,10 @@ export default {
         background-color: #e2d9c7;
         font-family: 'Crimson Text', serif;
     }
-    
 
-    
+    .relative{
+        font-size:large
+    }
 </style>
 
 

@@ -5,10 +5,16 @@
     
 <!-- NAVBAR -->
 <!-- Iconos redes sociales -->
-    <div class="SocialMedia flex flex-row justify-center gap-4 items-center py-2">
-      <button class="Instagram">☺️</button>
-      <button class="Facebook">☺️</button>
-      <button class="Twitter">☺️</button>
+    <div class="SocialMedia flex flex-row justify-center gap-10 items-center py-2">
+      <button class="Instagram">
+      <img src="../public/instagram-brands-solid.svg" alt="icono instagram" class="w-8">
+      </button>
+      <button class="Facebook">
+        <img src="../public/facebook-brands-solid.svg" alt="icono facebook" class="w-8">
+      </button>
+      <button class="Twitter">
+      <img src="../public/twitter-brands-solid.svg" alt="icono twitter" class="w-8">
+      </button>
     </div>
     
     <nav class="navbar bg-amber-500 flex justify-center gap- items-center">
@@ -19,8 +25,8 @@
 
 <!-- BOTÓN FIJO LATERAL DERECHO SOCIAL MEDIA -->
 <div class="fixed right-4 bottom-4 flex space-x-4">
-  <button class="w-32 h-12 bg-[#857a5c] text-white rounded">Dona</button>
-  <button class="w-32 h-12 bg-[#857a5c] text-white rounded">
+  <button class="w-32 h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">Dona</button>
+  <button class="w-32 h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">
     <span class="material-symbols-outlined">Síguenos</span>
   </button>
 </div>
@@ -28,7 +34,7 @@
 
 <!-- FOOTER -->
 <div class="footerGrid flex items-center">
-  <footer class="footer bg-gray-200 grid grid-cols-4 mt-auto">
+  <footer class="footer bg-[#47462d] grid grid-cols-4 mt-auto">
     <!-- mt-auto = margin top auto: hace que se ajuste al final del contenedo principal -->
     <p>Copyright 2024</p>
   </footer>
