@@ -15,8 +15,12 @@
     </div>
 
     <!-- Apartado carrusel Nuestros valores -->
-    <div class="mainColabora bg-cyan-400 flex flex-col justify-center items-center" >
+    <div class="mainValores bg-cyan-400 flex flex-col justify-center items-center" >
         <p> Nuestros valores</p>
+        <div>
+        
+        
+  </div>
     </div>
 
     <!-- Apartado Conoce a nuestros habitantes -->
@@ -162,8 +166,16 @@
 
 
 <script>
+
 import CardHabitantes from '../components/CardHabitantes.vue';
 import Contador from '../components/Contador.vue';
+
+
+
+
+    
+import CardHabitantes from './CardHabitantes.vue';
+
 export default {
     name: "Home",
     components: {
