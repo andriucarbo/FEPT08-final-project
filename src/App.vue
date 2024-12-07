@@ -5,10 +5,16 @@
     
 <!-- NAVBAR -->
 <!-- Iconos redes sociales -->
-    <div class="SocialMedia flex flex-row justify-center gap-4 items-center py-2">
-      <button class="Instagram">☺️</button>
-      <button class="Facebook">☺️</button>
-      <button class="Twitter">☺️</button>
+    <div class="SocialMedia flex flex-row justify-center gap-10 items-center py-2">
+      <button class="Instagram">
+      <img src="../public/instagram-brands-solid.svg" alt="icono instagram" class="w-8">
+      </button>
+      <button class="Facebook">
+        <img src="../public/facebook-brands-solid.svg" alt="icono facebook" class="w-8">
+      </button>
+      <button class="Twitter">
+      <img src="../public/twitter-brands-solid.svg" alt="icono twitter" class="w-8">
+      </button>
     </div>
     
     <nav class="navbar bg-amber-500 flex justify-center gap- items-center">
