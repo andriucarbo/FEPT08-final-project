@@ -1,6 +1,6 @@
 <template>
         <!-- Main -->
-<div class="main border-cyan-900 border-2" >
+<div class="main" >
 
     <!-- Apartado home "conócenos - conoce nuestra historia" -->
     <div class="mainConocenos bg-[url('/HomePics/VacaPortada1.png')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full h-full">
@@ -27,7 +27,7 @@
         <div class="CardHabitantes flex flex-wrap justify-center items-center w-full h-full mb-64">
             <CardHabitantes/>
             <div>
-                <button class="buttonnuestroshabitantes text-xl p-4 bg-[#857a5c] text-slate-50 rounded hover:bg-[#6e654c] hover:text-slate-50 focus:outline-none  ">Conoce a nuestros habitantes</button>
+                <button class="buttonnuestroshabitantes text-xl p-4 bg-[#857a5c] text-slate-50 rounded hover:bg-[#6e654c] hover:text-[#e2d9c7] focus:outline-none  ">Conoce a nuestros habitantes</button>
             </div>
         </div>
 
@@ -87,46 +87,49 @@
 
 <!-- APARTADO COLABORA :CÓDIGO PROVISIONAL EN COMPONENTE ColaboraHome.vue -->
 
-<div class="bg-purple-600">
-    Colabora
-
+<div class="">
 
 <div class="grid grid-cols-3 gap-4">
-    <div class="row-span-3 bg-amber-200 ml-20">
+    <div class="row-span-2  ml-20">
         <img src="/public/HomePics/niñacolaborahome.png" alt="niña abrazando a conejo" class="w-full h-full">
     </div>
-    <div class="bg-amber-400">
-        <h1 class="text1 text-3xl font-bold text-[#47462d]">¿Cómo puedes ayudar?</h1>
+    <div class="">
+        <h1 class="text1 text-5xl font-bold text-[#47462d] text-center mt-20 justify-items-center">¿Cómo puedes ayudar?</h1>
+        <p class=" text1 text-2xl text-[#47462d] justify-items-center mt-20 text-center">Estas son algunas de las maneras con las que nos puedes ayudar a seguir salvando la vida de cientos de animales</p>
     </div>
-    <div class="bg-amber-500">
+    <div class=" mr-20">
         <Contador/>
     </div>
 
-    <div class="bg-amber-700">
-        <p class=" text1 text-xl text-[#47462d]">Estas son algunas de las maneras con las que nos puedes ayudar a seguir salvando la vida de cientos de animales</p>
-    </div>
+<div class="grid grid-col-4">
+    <div class=" col-span-2 flex flex-col justify-center">
+        <button class=" p-4 rounded shadow text-center border-b-2 border-[#47462d] hover:bg-[#e6dfd1]">
+            <p class="text1 text-[#47462d] text-2xl ">Hazte socio/a</p>
+            <p class="text1 text-[#47462d] text-l">Elige la cantidad mensual con la que quieres colaborar</p>
+        </button>
 
-    <div class="bg-amber-800">
-        <button class="text1 bg-[#47462d] text-white py-2 px-4 rounded mt-4">Botón</button>
-    </div>
+        <button class=" p-4 rounded shadow text-center hover:bg-[#e6dfd1]">
+            <p class="text1 text-[#47462d] text-2xl">Dona hoy</p>
+            <p class="text1 text-[#47462d] text-l">Realiza tu donación para apoyar la misión de Santuario PATOdalavida</p>
+        </button>
 
-    <div class="col-span-2 bg-amber-900">
-        <div class="bg-red-200 p-4 rounded shadow text-center">
-        <p class="text1 text-[#47462d] ">Texto en la tarjeta 1</p>
+        
     </div>
+</div>
 
-    <div class="bg-blue-400 p-4 rounded shadow text-center">
-        <p class="text1 text-[#47462d]">Texto en la tarjeta 2</p>
-    </div>
+    <div class=" mr-20 flex flex-col justify-center">
+        <button class=" p-4 rounded shadow text-center border-b-2 border-[#47462d] hover:bg-[#e6dfd1]">
+            <p class=" text1 text-[#47462d] text-2xl">Amadrina</p>
+            <p class="text1 text-[#47462d] text-l">Los habitantes necesitan padrinos y madrinas que nos ayuden a cuidarles</p>
+        </button>
 
-    <div class="bg-green-300 p-4 rounded shadow text-center">
-        <p class=" text1 text-[#47462d]">Texto en la tarjeta 3</p>
+        <button class=" p-4 rounded shadow text-center hover:bg-[#e6dfd1]">
+            <p class="text1 text-[#47462d] text-2xl">Voluntariado</p>
+            <p class="text1 text-[#47462d] text-l">Ayuda en el trabajo del día a día</p>
+        </button>
     </div>
-
-    <div class="bg-purple-200 p-4 rounded shadow text-center">
-        <p class="text1 text-[#47462d]">Texto en la tarjeta 4</p>
-    </div>
-    </div>
+    
+    
 </div>
 </div>
 

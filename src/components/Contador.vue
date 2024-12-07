@@ -1,21 +1,21 @@
 <template>
-<div class="bg-gray-100 flex flex-col items-end p-4 space-y-4">
+<div class="#e2d9c7 flex flex-col p-4 space-y-4">
     
     <div class="">
-        <div class="text-7xl font-bold text-[#47462d] text-center">
+        <div class="text-5xl font-bold text-[#47462d] text-center mt-14">
             +{{ count325 }}  
         </div>
         <div>
-            <p class="text-l  text-[#47462d] text-center">Animales rescatados</p>
+            <p class="text-2xl  text-[#47462d] text-center">Animales rescatados</p>
         </div>
     </div>
 
     <div class="">
-        <div class="text-7xl font-bold text-[#47462d] mt-4 text-center">
+        <div class="text-5xl font-bold text-[#47462d] mt-4 text-center">
             +{{ count238 }} 
         </div>
         <div>
-            <p class="text-l text-[#47462d] text-center">Habitantes en el Santuario</p>
+            <p class="text-2xl text-[#47462d] text-center">Habitantes en el Santuario</p>
         </div>
     </div>
     
