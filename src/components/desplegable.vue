@@ -43,7 +43,8 @@
         <li class="px-4 py-2 hover:bg-gray-100">Amadrina</li>
         <li class="px-4 py-2 hover:bg-gray-100">Donativos</li>
         <li class="px-4 py-2 hover:bg-gray-100">Voluntariado</li>
-        <li class="px-4 py-2 hover:bg-gray-100">Trabaja con nosotros</li>
+        <li class="px-4 py-2 hover:bg-gray-100">Beneficios fiscales</li>
+        <li class="px-4 py-2 hover:bg-gray-100">Otras formas de colaborar</li>
     </ul>
     </div>
 </div>
