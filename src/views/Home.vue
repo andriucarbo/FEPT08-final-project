@@ -84,10 +84,10 @@
 </div>
 
 <!-- APARTADO EDUCA -->
-<div class="container mx-auto p-6 flex flex-col border-b border-[#47462d]/50"> 
+<div class="container mx-auto p-6 flex flex-col"> 
     <div class="textEduca mx-20 by-20">
         <h1 class="text1 text-5xl font-bold text-[#47462d] text-center my-20" >Educa</h1>
-        <p class="text1 text-2xl text-[#47462d] mt-10 mb-10 text-center" >La Fundación Santuario PATOdalavida ofrece formaciones o talleres a escuelas, centros formativos y familias que quieran venir a pasar un día con nosotros y descubrir todo lo que podemos hacer por ellos</p>
+        <p class="text1 text-2xl text-[#47462d] mt-10 mb-10 text-center" >La Fundación Santuario PATOdalavida ofrece formaciones o talleres a escuelas, centros formativos y familias que quieran venir a pasar un día con nosotros. </p>
     </div>
     <div class=" text1 flex flex-wrap justify-center gap-8"> 
         <FlipCard 
@@ -127,8 +127,14 @@
         <p>Noticias</p>
     </div> -->
 
-    <div class="mainTienda bg-violet-500 flex flex-col justify-center items-center">
-        <p>Tienda</p>
+    <div class="mainTienda bg-[url('/public/AnimalesGridHomeView/imagentienda.png')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full h-full">
+        <div>
+            <h1 class="title1 text-5xl text-[#47462d] my-20 mx-20 text-center">Tienda solidaria <br> Santuario PATOdalavida</h1>
+            <p class="text1 text-3xl text-[#47462d] text-center">Ayúdanos a cambiar su mundo.</p> 
+        </div> 
+        <div class="buttonContainer flex justify-center w-full mt-8">
+                <button class="buttontienda text-xl p-4 text-[#857a5c] rounded hover:bg-neutral-50 hover:text-[#857a5c] focus:outline-none ml-auto mr-36 mb-36">Accede a nuestra tienda</button>
+            </div>
     </div>
 
     <!-- <div class="mainContacto bg-teal-300 flex flex-col justify-center items-center" >
@@ -161,13 +167,15 @@ export default {
 
 <style>
 
-.title1, .text1, .buttonnuestraHistoria  {
+.title1, .text1, .buttonnuestraHistoria, .buttontienda  {
     font-family: 'Crimson Text', serif;
 }
 
-.buttonnuestraHistoria {
+.buttonnuestraHistoria, .buttontienda {
     background-color: #e2d9c7;
 }
+
+
 
 
 
