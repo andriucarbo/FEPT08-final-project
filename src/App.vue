@@ -48,7 +48,7 @@
         <div class="footer_item flex flex-col items-start">
           <div class="footer_socialmedia">
             <h1 class="footer_logo">LOGO</h1>
-            <h3 class="footer_subtitle">Redes sociales:</h3>
+            <h3 class="footer_subtitle text-2xl underline">Redes sociales:</h3>
             <!-- FOOTER SOCIAL LINK BODY -->
             <div class="footer_social_link_body flex space-x-4 mb-4">
               <a href="" class="footer_social_link pb-3 text-xl justify-items-start">
@@ -82,7 +82,7 @@
       
         <!-- FOOTER ITEMS 2 -->
         <div class="footer_item">
-          <h1 class="footer_title">Quick Links</h1>
+          <h1 class="footer_title text-2xl underline">Acceso rápido</h1>
           <ul class="footer_menu">
             <!-- Footer menu intem -->
             <li class="footer_menu-item">
@@ -119,7 +119,7 @@
         
         <!-- FOOTER ITEMS 3 -->
         <div class="footer_item">
-          <h1 class="footer_title">Información de contacto</h1>
+          <h1 class="footer_title text-2xl underline">Información de contacto</h1>
           <ul class="footer_contact space-y-2">
             <!-- Footer contacto intem -->
             <li class="footer_contact-item">
@@ -154,7 +154,7 @@
             <li class="footer_contact-item">
               <a href="" class="footer_contact-link flex items-center">
               <img src="../public/location-dot-solid.svg" alt="icono ubicación" class="w-6">
-              <p class="footer_location-subtitle">Dónde nos encontramos:</p>
+              <p class="footer_location-subtitle ml-2">Dónde nos encontramos:</p>
               </a>
             </li>
           </ul>
@@ -182,7 +182,7 @@ export default {
 
   data(){
     return{
-      title:"holaaa! 🐷🐷 "
+      
     }
   }
   

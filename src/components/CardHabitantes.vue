@@ -2,7 +2,7 @@
     <div class="container">
         <div class="card">
             <div class="imgbox">
-                <img src="/public/AnimalesGridHomeView/burros1.png" alt="Imagen dos burros">
+                <img src="/public/CardHabitantesImages/burros1.png" alt="Imagen dos burros">
             </div>
             <div class="text">
                 <h2>Platero</h2>
@@ -13,7 +13,7 @@
 
         <div class="card">
             <div class="imgbox">
-                <img src="/public/AnimalesGridHomeView/gallinas1.png" alt="Imagen dos gallinas sobre una silla">
+                <img src="/public/CardHabitantesImages/gallinas1.png" alt="Imagen dos gallinas sobre una silla">
             </div>
             <div class="text">
                 <h2>Nugget</h2>
@@ -24,7 +24,7 @@
 
         <div class="card">
             <div class="imgbox">
-                <img src="/public/AnimalesGridHomeView/oveja3.png" alt="Imagen oveja lana rizado">
+                <img src="/public/CardHabitantesImages/oveja3.png" alt="Imagen oveja lana rizado">
             </div>
             <div class="text">
                 <h2>Margot</h2>
