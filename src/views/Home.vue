@@ -20,7 +20,7 @@
         <div>
         
         
-  </div>
+</div>
     </div>
 
     <!-- Apartado Conoce a nuestros habitantes -->
@@ -28,85 +28,34 @@
         <h1 class="text1 text-5xl text-[#47462d] my-10 mx-20"> Nuestros habitantes</h1>
         <p class="text1 text-2xl px-14 mx-36 text-[#47462d]">En la Fundación Santuario PATOdalavida trabajamos día a día para disponer de las condiciones necesarias y ofrecer a los animales que forman parte de nuestra familia esa vida que se merecen.</p>
 
-        <div class="CardHabitantes flex flex-wrap justify-center items-center w-full h-full mb-64">
+        <div class="CardH flex flex-wrap justify-center items-center w-full h-full mb-32">
             <CardHabitantes/>
             <div>
                 <button class="buttonnuestroshabitantes text-xl p-4 bg-[#857a5c] text-slate-50 rounded hover:bg-[#6e654c] hover:text-[#e2d9c7] focus:outline-none  ">Conoce a nuestros habitantes</button>
             </div>
-        </div>
-
-        <div class="grid grid-cols-4 bg-pink-500 gap-4 ml-4 mr-4 " >
-            
-
-                <!-- <img src="/AnimalesGridHomeView/burros1.png" alt="Imagen burros"/>
-                <p>Nombre</p>
-                <p>Historia</p>
-                <button>Apadríname</button>
-            </div>
-            <div class="dos bg-slate-200" >
-                <img src="/AnimalesGridHomeView/gallinas1.png" alt="imagen gallinas sobre silla">
-                <p>Nombre</p>
-                <p>Historia</p>
-                <button>Apadríname</button>
-            </div>
-            <div class="tres bg-slate-200" >
-                <img src="/AnimalesGridHomeView/pato1.png" alt="imagen pato blanco">
-                <p>Nombre</p>
-                <p>Historia</p>
-                <button>Apadríname</button>
-            </div>
-            <div class="cuatro bg-slate-200" >
-                <img src="/AnimalesGridHomeView/lechones1.png" alt="imagen 3 lechones">
-                <p>Nombre</p>
-                <p>Historia</p>
-                <button>Apadríname</button>
-            </div>
-            <div class="cinco bg-slate-200" >
-                <img src="/AnimalesGridHomeView/ternera1.png" alt="imagen ternera marrón">
-                <p>Nombre</p>
-                <p>Historia</p>
-                <button>Apadríname</button>
-            </div>
-            <div class="seis bg-slate-200" >
-                <img src="/AnimalesGridHomeView/oveja3.png" alt="oveja lana rizada">
-                <p>Nombre</p>
-                <p>Historia</p>
-                <button>Apadríname</button>
-            </div>
-            <div class="seis bg-slate-200" >
-                <img src="/AnimalesGridHomeView/conejo1.png" alt="imagen conejo marrón">
-                <p>Nombre</p>
-                <p>Historia</p>
-                <button>Apadríname</button>
-            </div>
-            <div class="seis bg-slate-200" >
-                <img src="/AnimalesGridHomeView/lechon2.png" alt="lechón con manchitas">
-                <p>Nombre</p>
-                <p>Historia</p>
-                <button>Apadríname</button>
-            </div> -->
-        
-        </div>
+        </div> 
     </div>
 
-<!-- APARTADO COLABORA :CÓDIGO PROVISIONAL EN COMPONENTE ColaboraHome.vue -->
+    <div class="">
+        <h1 class="text1 text-5xl font-bold text-[#47462d] text-center">¿Cómo puedes ayudar?</h1>
+        <p class=" text1 text-2xl text-[#47462d] mt-10 mb-10 text-center">Estas son algunas de las maneras con las que nos puedes ayudar a seguir salvando la vida de cientos de animales</p>
+    </div>
 
 <div class="">
-
-<div class="grid grid-cols-3 gap-4">
-    <div class="row-span-2  ml-20">
-        <img src="/public/HomePics/niñacolaborahome.png" alt="niña abrazando a conejo" class="w-full h-full">
+<div class="grid grid-cols-2 gap-4">
+    <div class="row-span-1  ml-60 mb-6">
+        <img src="/public/HomePics/niñacolaborahome.png" alt="niña abrazando a conejo" class="w-50%">
     </div>
-    <div class="">
+    <!-- <div class="">
         <h1 class="text1 text-5xl font-bold text-[#47462d] text-center mt-20 justify-items-center">¿Cómo puedes ayudar?</h1>
         <p class=" text1 text-2xl text-[#47462d] justify-items-center mt-20 text-center">Estas son algunas de las maneras con las que nos puedes ayudar a seguir salvando la vida de cientos de animales</p>
-    </div>
-    <div class=" mr-20">
+    </div> -->
+    <div class="flex justify-items-center ml-20">
         <Contador/>
     </div>
 
-<div class="grid grid-col-4">
-    <div class=" col-span-2 flex flex-col justify-center">
+<div class="">
+    <div class="flex flex-col justify-center ml-20">
         <button class=" p-4 rounded shadow text-center border-b-2 border-[#47462d] hover:bg-[#e6dfd1]">
             <p class="text1 text-[#47462d] text-2xl ">Hazte socio/a</p>
             <p class="text1 text-[#47462d] text-l">Elige la cantidad mensual con la que quieres colaborar</p>
@@ -169,12 +118,6 @@
 
 import CardHabitantes from '../components/CardHabitantes.vue';
 import Contador from '../components/Contador.vue';
-
-
-
-
-    
-import CardHabitantes from './CardHabitantes.vue';
 
 export default {
     name: "Home",
