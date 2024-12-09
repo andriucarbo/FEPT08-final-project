@@ -1,17 +1,17 @@
 <template>
-<div class="#e2d9c7 flex flex-col p-4 space-y-4">
-    
-    <div class="">
-        <div class="text-5xl font-bold text-[#47462d] text-center mt-14">
+<div class="#e2d9c7 flex flex-col justify-center items-center space-y-8 p-4">
+    <!-- PRIMER CONTADOR -->
+    <div class="flex flex-col items-center">
+        <div class="text-5xl font-bold text-[#47462d]">
             +{{ count325 }}  
         </div>
         <div>
             <p class="text-2xl  text-[#47462d] text-center">Animales rescatados</p>
         </div>
     </div>
-
-    <div class="">
-        <div class="text-5xl font-bold text-[#47462d] mt-4 text-center">
+    <!-- SEGUNDO CONTADOR -->
+    <div class="flex flex-col items-center">
+        <div class="text-5xl font-bold text-[#47462d]">
             +{{ count238 }} 
         </div>
         <div>
