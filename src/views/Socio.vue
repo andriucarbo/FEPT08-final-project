@@ -54,7 +54,7 @@
 
 
 <script>
-import FormSocio from './FormSocio.vue';
+import FormSocio from '../components/FormSocio.vue';
 export default {
     components: { FormSocio },
     data() {

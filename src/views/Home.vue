@@ -178,12 +178,11 @@
 import CardHabitantes from '../components/CardHabitantes.vue';
 import Contador from '../components/Contador.vue';
 import FlipCard from '../components/FlipCard.vue';    
-import CardHabitantes from './CardHabitantes.vue';
 import Carousel from '../components/Carousel.vue';
 import CarouselSlide from '../components/CarouselSlide.vue';    
 
 // importación de pinia counterDemo
-import useCounterDemoStore from '../stores/counterDemo.js';
+// import useCounterDemoStore from '../stores/counterDemo.js';
 
 export default {
     name: "Home",
@@ -197,7 +196,6 @@ export default {
                 '/public/CarouselPics/goats comiendo (Sitio web).png',
                 '/public/CarouselPics/caballos (Sitio web).png'
 
-             
                 
 
             ],
@@ -207,15 +205,12 @@ export default {
     },
 
 // necesario para pinia
-    computed:{
-        // se llama counter porque quiero trabajar sobre counterStore, si quisiera trabajar con products se llamaría product
-        counter(){
-            return useCounterDemoStore()
-        }
-
-    },
-}
-=======
+    // computed:{
+    //     // se llama counter porque quiero trabajar sobre counterStore, si quisiera trabajar con products se llamaría product
+    //     counter(){
+    //         return useCounterDemoStore()
+    //     }}
+    
     computed: {
         slidesLen(){
             return this.slides.length;
@@ -239,11 +234,6 @@ export default {
             this.direction = "right"
         },}
     }
-
-
-
-
-
 </script>
 
 
@@ -256,9 +246,5 @@ export default {
 .buttonnuestraHistoria, .buttontienda {
     background-color: #e2d9c7;
 }
-
-
-
-
 
 </style>

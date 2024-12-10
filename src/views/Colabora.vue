@@ -1,16 +1,18 @@
 <template>
     <div>
         <h1 class="contenedor_colabora-view">Colabora view</h1>
-        <Socio></Socio>
+        <router-view></router-view>
+
+        <!-- <Socio></Socio> -->
     </div>
 </template>
 <script>
-import Socio from '../components/Socio.vue';
+// import Socio from '../views/Socio.vue';
 
 
 export default {
     name:'Colabora',
-    components: {Socio,}
+    // components: {Socio,}
     
 }
 </script>
