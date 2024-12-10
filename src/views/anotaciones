@@ -18,9 +18,37 @@ Paso 9) Dentro de <script> hemos incluido componentes: { desplegable } para que 
 
 
 Tipografía:
-Hemos descargado la tipografía Crimson Text desde Googlefonts copiando el <link> y pegandolo en el head del archivo index.html
+Hemos descargado la tipografía Crimson Text desde Googlefonts copiando el <link> y pegándolo en el head del archivo index.html
 luego hemos ido a style.css, hemos incluido la classe Crimson-text-regular con sus características y como último paso hemos añadido en desplegable.vue en el apartado <style>, la clase Navbar, la font-family Crimson.
+
+
+
+CARRUSEL:
+
+https://www.youtube.com/watch?v=6-JEiEfkluc
+Creamos dos componentes : Carousel.vue y CarouselSlide.vue y trabajamos sobre Home.vue
+La idea es que haya múltiples imágenes pero solo se pueda ver una, la que estará en posición 0
+En el documento Home.vue se introducen:
+En <script>:
+las imagenes en data() - los slides
+Importamos Carousel y CarouselSlide de componentes.
+en el <template> se aplica  un v-for en el cual podremos ver todas las slides con el index en posición 0 = visibleSlide.
+En CarouselSlide.vue voy a decirle en el <template> con el v-show, hey , si visibleSlide es igual a posición 0, entonces, muéstrame la imagen, si no, no me la muestres.
+
+
+
+
+
+
+
+
+
 -->
  
+
+
+
+
+
 
 
