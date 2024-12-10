@@ -1,4 +1,8 @@
 <template>
+
+    <!-- <div>
+        <h2>{{counter.name}}</h2>
+    </div> -->
         <!-- Main -->
 <div class="main" >
 
@@ -148,10 +152,12 @@
 
 
 <script>
-
 import CardHabitantes from '../components/CardHabitantes.vue';
 import Contador from '../components/Contador.vue';
 import FlipCard from '../components/FlipCard.vue';
+
+// importación de pinia counterDemo
+import useCounterDemoStore from '../stores/counterDemo.js';
 
 export default {
     name: "Home",
@@ -159,6 +165,14 @@ export default {
         CardHabitantes, 
         Contador,
         FlipCard
+    },
+// necesario para pinia
+    computed:{
+        // se llama counter porque quiero trabajar sobre counterStore, si quisiera trabajar con products se llamaría product
+        counter(){
+            return useCounterDemoStore()
+        }
+
     },
 }
 
