@@ -165,7 +165,7 @@
     </div> -->
 
 
-</div>
+
 
 </template>
 
@@ -174,17 +174,14 @@
 
 import CardHabitantes from '../components/CardHabitantes.vue';
 import Contador from '../components/Contador.vue';
-import FlipCard from '../components/FlipCard.vue';
-
-
-
-    
+import FlipCard from '../components/FlipCard.vue';    
 import CardHabitantes from './CardHabitantes.vue';
 import Carousel from '../components/Carousel.vue';
 import CarouselSlide from '../components/CarouselSlide.vue';    
+
 export default {
     name: "Home",
-    components: {CardHabitantes, Carousel, CarouselSlide },
+    components: {CardHabitantes, Carousel, CarouselSlide, Contador, FlipCard, },
     data(){
         return{
             slides: [
@@ -223,17 +220,11 @@ export default {
                 this.visibleSlide--;
             }
             this.direction = "right"
-        }
+        },}
+    }
 
-export default {
-    name: "Home",
-    components: {
-        CardHabitantes, 
-        Contador,
-        FlipCard
 
-    },
-}
+
 
 </script>
 
