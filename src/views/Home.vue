@@ -15,9 +15,9 @@
     </div>
 
     <!-- Apartado carrusel Nuestros valores -->
-    <div class="mainValores flex flex-col justify-center items-center" >
-        <p> Nuestros valores</p>
-        <carousel 
+    <div class="mainValores flex flex-row items-stretch m-10" >
+        
+        <carousel class=" bg-red-300" 
             @next="next"
             @prev="prev"
         >
@@ -30,6 +30,17 @@
                 <img :src="slide" />
             </carousel-slide>
         </carousel>
+        <div class="w-1/2 p-8 text-[#857a5c]">
+            <div class="text-center">
+                <p class="text1 text-2xl m-4 ">MISIÓN</p>
+                <p class="text1 text-center ">Preservar y recuperar el ecosistema de fauna y flora salvaje de nuestra zona tratando que haya el menor impacto humano. Educar a las personas para que nuestra misión llegue más lejos y pueda tener mayor impacto en la naturaleza.</p>
+                <p class="text1 text-2xl m-6">VISIÓN</p>
+                <p class="text1 text-center ">La naturaleza es perfecta y tiene sus propios sistemas de autorregulación, muchas veces incompresibles para la mente humana. El impacto de nuestra civilización no hace más que perjudicar el frágil equilibrio de nuestro planeta. Por ello nuestra visión es de máximo respeto y mínimo impacto para la naturaleza.</p>
+                <p class="text1 text-2xl m-6">VALORES</p>
+                <p class="text1 text-center">*Respeto hacia el medio natural*Responsabilidad*Concienciación*Compromiso*Desarrollo humano*</p>
+            </div>
+        </div>
+        
     </div>
 
     <!-- Apartado Conoce a nuestros habitantes -->
@@ -140,12 +151,18 @@ export default {
     data(){
         return{
             slides: [
-                'https://picsum.photos/id/237/600/300',
-                'https://picsum.photos/id/236/600/300',
-                'https://picsum.photos/id/235/600/300',
-                'https://picsum.photos/id/234/600/300',
-                'https://picsum.photos/id/233/600/300',
-                'https://picsum.photos/id/232/600/300',
+                '/public/CarouselPics/hens (Sitio web).png',
+                '/public/CarouselPics/baby goat (Sitio web).png',
+                '/public/CarouselPics/vacas grupo (Sitio web).png',
+                '/public/CarouselPics/goats comiendo (Sitio web).png',
+                '/public/CarouselPics/caballos (Sitio web).png'
+
+                // 'https://picsum.photos/id/237/600/300',
+                // 'https://picsum.photos/id/236/600/300',
+                // 'https://picsum.photos/id/235/600/300',
+                // 'https://picsum.photos/id/234/600/300',
+                // 'https://picsum.photos/id/233/600/300',
+                // 'https://picsum.photos/id/232/600/300',
                 
 
             ],
