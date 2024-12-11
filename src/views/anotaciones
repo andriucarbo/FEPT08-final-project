@@ -35,6 +35,76 @@ Importamos Carousel y CarouselSlide de componentes.
 en el <template> se aplica  un v-for en el cual podremos ver todas las slides con el index en posición 0 = visibleSlide.
 En CarouselSlide.vue voy a decirle en el <template> con el v-show, hey , si visibleSlide es igual a posición 0, entonces, muéstrame la imagen, si no, no me la muestres.
 
+--------------------------------------------------------------------------------
+CÓMO HACER UN ROUTER VIEW
+1) Crea la vista (view) o componente
+   
+2) En el documento de "routes.js" incluye en "const routes" el componente (padre o children, mirar ejemplo:)
+   
+   {   path: "/colabora",
+        name: "Colabora",
+        component: Colabora,
+        children: [
+            {
+                path:'HazteSocio',
+                component:Socio
+            },
+            // {
+            //     path:'/Amadrina',
+            //     component:Amadrina
+            // },
+        ]
+        },
+3) En "router.js", debes importar la ruta y añadir en componentes (mirar ejemplo)
+   
+    import Home from './views/Home.vue'
+    import Colabora from './views/Colabora.vue'
+    import Socio from './views/Socio.vue'
+    import Amadrina from './views/Amadrina.vue'
+
+4) En el documento donde quieres que se imprima ese componente o vista, debes escribir "routerview" en la zona en la que quieras que se vea la información. Por ejemplo, si quieres que en App.vue se vea información de Home.vue, debes escribir <router-view></router-view> en App.vue
+   
+
+
+
+
+-------------------------------------------------------------------------------
+
+CÓMO HACER UN ROUTER LINK
+1) Abrir el componente o vista en el que se vaya a encontrar el botón que te lleve a la información que quieres mostrar. 
+2) incluir en template (por ahora, hay opciones más avanzadas) el router-link, con el path que se indica en el ejemplo: 
+
+(EJEMPLO DESPLEGABLE.VUE)
+<div class="relative">
+    <button class="colabora px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
+
+    @click="toggleDropdown('colabora')">Colabora</button>
+
+    <div v-if="activeDropdown === 'colabora'" 
+    class="absolute left-0 mt-2 bg-white shadow-lg rounded w-48">
+
+    <ul class="flex flex-col">
+
+        <router-link to="/Colabora/HazteSocio" class="px-4 py-2 hover:bg-gray-100">Hazte socio</router-link>
+        
+        (en este caso se ha sustituido el "li" por "router-link to..." esto se va a tener que hacer con todos los botones)
+    
+        <li class="px-4 py-2 hover:bg-gray-100">Amadrina</li>
+        <li class="px-4 py-2 hover:bg-gray-100">Donativos</li>
+        <li class="px-4 py-2 hover:bg-gray-100">Voluntariado</li>
+        <li class="px-4 py-2 hover:bg-gray-100">Beneficios fiscales</li>
+        <li class="px-4 py-2 hover:bg-gray-100">Otras formas de colaborar</li>
+    </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
 
 
