@@ -1,3 +1,87 @@
+<!-- CÓDIGO MIÉRCOLES 15h -->
+<template>
+  <div>
+    <h1>Habitantes de la Granja</h1>
+
+    <!-- Contenedor grid para las imágenes -->
+    <div class="grid-container grid-rows-3 gap-4">
+      <h1 class="animal_name">Mariano</h1>
+      <div class="animal_card flex justify-evenly bg-white shadow-lg px-4 py-4">
+        <div v-for="(pic, index) in animalPics" :key="index" class="grid-item h-auto rounded shadow">
+          <!-- Mostrar cada imagen -->
+          <img :src="pic" alt="Imagen de animal de granja" class="">
+        </div>
+          <!-- texto para presentar al animal de granja -->
+        <div class="animal_resume">texto presentación animal de granja</div>
+          <!-- Botón para amadrinar -->
+        <div class="button">
+          <button class="amadrina">Amadríname</button>
+        </div>
+    </div>
+
+      <h1 class="animal_name">Mariano</h1>
+
+<div class="animal_card flex justify-evenly bg-white shadow-lg px-4 py-4">
+  <div v-for="(pic, index) in animalPics" :key="index"      class="grid-item h-auto rounded shadow">
+    <!-- Mostrar cada imagen -->
+    <img :src="pic" alt="Imagen de animal de granja" class="">
+  </div>
+  <div class="animal_resume">texto presentación animal de granja</div>
+  <div class="button">
+    <button class="amadrina">Amadríname</button>
+  </div>
+  
+</div>
+      <!-- Iterar sobre animalPics con v-for -->
+      
+    </div>
+  </div>
+</template>
+
+<script>
+import { onMounted } from 'vue';
+import { useFarmAnimalPicsStore } from '../stores/farmAnimalPics';
+
+export default {
+  setup() {
+    // Acceder al store
+    const farmAnimalPicsStore = useFarmAnimalPicsStore();
+
+    // Definir método para cargar las imágenes
+    const loadSheepPics = () => {
+      // Llamar a la acción fetchAnimalPics del store
+      farmAnimalPicsStore.fetchAnimalPics();
+    };
+
+    // Llamar a loadSheepPics() cuando el componente se monta
+    onMounted(() => {
+      loadSheepPics();
+    });
+
+    return {
+      // Retornar animalPics y loadSheepPics para usarlos en el template
+      animalPics: farmAnimalPicsStore.animalPics,
+      loadSheepPics,
+    };
+  },
+};
+</script>
+
+<style>
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- <template>
     <div>
         <h1>Habitantes view</h1>
@@ -46,7 +130,7 @@ Dentro del archivo, crear los componentes que tiene (la estructura que queremos 
 2) crear en views el archivo Habitantes. -->
 
 
-<template>
+<!-- <template>
     <div>
       <h1>Imágenes de Ovejas</h1>
       <button @click='loadSheepPics'>Cargar Imágenes de Ovejas</button>
@@ -84,4 +168,4 @@ Dentro del archivo, crear los componentes que tiene (la estructura que queremos 
     height: auto;
     margin: 10px;
   }
-  </style>
+  </style> -->
