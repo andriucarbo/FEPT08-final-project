@@ -6,6 +6,7 @@ import Conocenos from './views/Conocenos.vue'
 import Historia from "./components/Historia.vue";
 import Socio from './views/Socio.vue'
 import Amadrina from './views/Amadrina.vue'
+import Habitantes from './views/Habitantes.vue'
 
 
 const routes = [
@@ -40,6 +41,11 @@ const routes = [
                 component: Historia,
             },
         ]
+        },
+        {
+            path: "/habitantes",
+            name:"Habitantes",
+            component: Habitantes,
         },
        
         //children: [
