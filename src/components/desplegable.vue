@@ -38,8 +38,11 @@
 
     <div v-if="activeDropdown === 'colabora'" 
     class="absolute left-0 mt-2 bg-white shadow-lg rounded w-48">
+
     <ul class="flex flex-col">
-        <li class="px-4 py-2 hover:bg-gray-100">Hazte socio</li>
+        <!-- <li class="px-4 py-2 hover:bg-gray-100">Hazte socio</li> -->
+        <router-link to="/Colabora/HazteSocio" class="px-4 py-2 hover:bg-gray-100">Hazte socio</router-link>
+    
         <li class="px-4 py-2 hover:bg-gray-100">Amadrina</li>
         <li class="px-4 py-2 hover:bg-gray-100">Donativos</li>
         <li class="px-4 py-2 hover:bg-gray-100">Voluntariado</li>

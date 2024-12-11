@@ -4,6 +4,8 @@ import Home from './views/Home.vue'
 import Colabora from './views/Colabora.vue'
 import Conocenos from './views/Conocenos.vue'
 import Historia from "./components/Historia.vue";
+import Socio from './views/Socio.vue'
+import Amadrina from './views/Amadrina.vue'
 
 
 const routes = [
@@ -15,7 +17,18 @@ const routes = [
     {   path: "/colabora",
         name: "Colabora",
         component: Colabora,
+        children: [
+            {
+                path:'HazteSocio',
+                component:Socio
+            },
+            {
+                path:'Amadrina',
+                component:Amadrina
+            },
+        ]
         },
+
     {
         path: "/conocenos",
         name: "Conocenos",
@@ -30,11 +43,6 @@ const routes = [
         },
        
         //children: [
-        //   {
-        //       path: 'historia',
-        //       name: 'Historia',
-        //       component: Historia,
-        //   },
         //     {
         //         path: 'mision',
         //         name: 'Mision',

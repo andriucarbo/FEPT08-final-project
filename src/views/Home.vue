@@ -181,7 +181,9 @@ import FlipCard from '../components/FlipCard.vue';
 import Carousel from '../components/Carousel.vue';
 import CarouselSlide from '../components/CarouselSlide.vue';    
 
-// // importación de pinia counterDemo
+
+// importación de pinia counterDemo
+
 // import useCounterDemoStore from '../stores/counterDemo.js';
 
 export default {
@@ -201,15 +203,14 @@ export default {
         }
     },
 
-// necesario para pinia 
-//     computed:{
-//         // se llama counter porque quiero trabajar sobre counterStore, si quisiera trabajar con products se llamaría product
-//         counter(){
-//             return useCounterDemoStore()
-//         }
 
-//     },
-// }
+// necesario para pinia
+    // computed:{
+    //     // se llama counter porque quiero trabajar sobre counterStore, si quisiera trabajar con products se llamaría product
+    //     counter(){
+    //         return useCounterDemoStore()
+    //     }}
+    
 
     computed: {
         slidesLen(){
@@ -235,11 +236,6 @@ export default {
             this.direction = "right"
         },}
     }
-
-
-
-
-
 </script>
 
 
@@ -252,9 +248,5 @@ export default {
 .buttonnuestraHistoria, .buttontienda {
     background-color: #e2d9c7;
 }
-
-
-
-
 
 </style>
