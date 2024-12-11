@@ -3,6 +3,7 @@ import { createWebHashHistory, createRouter } from "vue-router"
 import Home from './views/Home.vue'
 import Colabora from './views/Colabora.vue'
 import Socio from './views/Socio.vue'
+import Amadrina from './views/Amadrina.vue'
 
 const routes = [
     {   path: "/",
@@ -15,11 +16,11 @@ const routes = [
         component: Colabora,
         children: [
             {
-                path:'/HazteSocio',
+                path:'HazteSocio',
                 component:Socio
             },
             {
-                path:'/Amadrina',
+                path:'Amadrina',
                 component:Amadrina
             },
         ]
