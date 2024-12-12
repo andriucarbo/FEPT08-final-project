@@ -46,7 +46,7 @@
         <router-link to="/Colabora/Amadrina" class="px-4 py-2 hover:bg-gray-100">Amadrina</router-link>
         <router-link to="/Colabora/Dona" class="px-4 py-2 hover:bg-gray-100">Dona</router-link>
         <router-link to="/Colabora/Voluntariado" class="px-4 py-2 hover:bg-gray-100">Voluntariado</router-link>
-        <li class="px-4 py-2 hover:bg-gray-100">Beneficios fiscales</li>
+        <router-link to="/Colabora/BeneficiosFiscales" class="px-4 py-2 hover:bg-gray-100">Beneficios Fiscales</router-link>
         <li class="px-4 py-2 hover:bg-gray-100">Otras formas de colaborar</li>
     </ul>
     </div>

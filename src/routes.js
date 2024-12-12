@@ -9,6 +9,7 @@ import Amadrina from './views/Amadrina.vue'
 import Habitantes from './views/Habitantes.vue'
 import Dona from './views/Donativos.vue'
 import Voluntariado from "./views/Voluntariado.vue"
+import BeneficiosFiscales from "./views/BeneficiosFiscales.vue"
 
 
 const routes = [
@@ -36,6 +37,10 @@ const routes = [
             {
                 path:'Voluntariado',
                 component:Voluntariado
+            },
+            {
+                path:'BeneficiosFiscales',
+                component:BeneficiosFiscales
             },
         ]
         },
