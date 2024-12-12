@@ -3,10 +3,12 @@ import { createWebHashHistory, createRouter } from "vue-router"
 import Home from './views/Home.vue'
 import Colabora from './views/Colabora.vue'
 import Conocenos from './views/Conocenos.vue'
-import Historia from "./components/Historia.vue";
+import Historia from "./components/Historia.vue"
 import Socio from './views/Socio.vue'
 import Amadrina from './views/Amadrina.vue'
 import Habitantes from './views/Habitantes.vue'
+import Dona from './views/Donativos.vue'
+import Voluntariado from "./views/Voluntariado.vue"
 
 
 const routes = [
@@ -26,6 +28,14 @@ const routes = [
             {
                 path:'Amadrina',
                 component:Amadrina
+            },
+            {
+                path:'Dona',
+                component:Dona
+            },
+            {
+                path:'Voluntariado',
+                component:Voluntariado
             },
         ]
         },
