@@ -43,7 +43,7 @@
         <!-- <li class="px-4 py-2 hover:bg-gray-100">Hazte socio</li> -->
         <router-link to="/Colabora/HazteSocio" class="px-4 py-2 hover:bg-gray-100">Hazte socio</router-link>
     
-        <li class="px-4 py-2 hover:bg-gray-100">Amadrina</li>
+        <router-link to="/Colabora/Amadrina" class="px-4 py-2 hover:bg-gray-100">Amadrina</router-link>
         <li class="px-4 py-2 hover:bg-gray-100">Donativos</li>
         <li class="px-4 py-2 hover:bg-gray-100">Voluntariado</li>
         <li class="px-4 py-2 hover:bg-gray-100">Beneficios fiscales</li>

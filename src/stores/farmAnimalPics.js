@@ -36,6 +36,9 @@ export const useFarmAnimalPicsStore = defineStore('farmAnimalPics', {
 });
 
 
+//API KEY ANDREA: TTjl1vVp5sGjNOJt0kTPb01cxe-lokmQRvZJV525xfo
+//API KEY VANESSA: 759WuqsHL09nnyTP2WrSL2JgPfvCqjCpTS26W-2pEe0
+
 
 
 

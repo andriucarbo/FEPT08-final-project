@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="contenedor_colabora-view">Colabora view</h1>
+        <h1 class="contenedor_colabora-view"></h1>
         <router-view></router-view>
 
 
