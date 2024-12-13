@@ -268,3 +268,6 @@ export default {
 
 
 </style>
+
+
+<!-- HACER  RESPONSIVE -->
