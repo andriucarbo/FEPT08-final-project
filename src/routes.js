@@ -9,6 +9,9 @@ import Equipo from './components/Equipo.vue'
 import Socio from './views/Socio.vue'
 import Amadrina from './views/Amadrina.vue'
 import Habitantes from './views/Habitantes.vue'
+import Dona from './views/Donativos.vue'
+import Voluntariado from "./views/Voluntariado.vue"
+import BeneficiosFiscales from "./views/BeneficiosFiscales.vue"
 
 
 const routes = [
@@ -28,6 +31,18 @@ const routes = [
             {
                 path:'Amadrina',
                 component:Amadrina
+            },
+            {
+                path:'Dona',
+                component:Dona
+            },
+            {
+                path:'Voluntariado',
+                component:Voluntariado
+            },
+            {
+                path:'BeneficiosFiscales',
+                component:BeneficiosFiscales
             },
         ]
         },
