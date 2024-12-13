@@ -65,7 +65,7 @@ const routes = [
             {
                 path: "mision",
                 name: "Mision",
-                components: Mision,
+                component: Mision,
             },
         ]
         },
