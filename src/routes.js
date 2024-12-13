@@ -74,7 +74,7 @@ const routes = [
             name:"Habitantes",
             component: Habitantes,
         },
-       
+
         //children: [
         //     {
         //         path: 'mision',

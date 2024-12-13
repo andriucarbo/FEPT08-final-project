@@ -1,27 +1,51 @@
 [
     {
         "id": 1,
-        "name": "Mariano",
-        "description": "Es una oveja que busca familia",
-        "age": 3
+        "name": "Tristan",
+        "description": "Tristan, junto con dos hermanas más, aparecieron abandonados en lo que parecía una caseta de cazadores en 2023. Tristan era el más tímido de los tres, aunque con el paso de los meses descubrió que le encantaban las caricias y se convirtió en uno de los equinos más cariñosos. El pasado 14 de Mayo de 2024, Tristán se enfermó y tenía una cirugía programada. Le tenían que extirpar una masa de la garganta. La cirugía era arriesgada porque el tamaño de la masa era muy grande y estaba cerca de vasos sanguíneos, pero no teníamos más remedio que intentar quitársela. La cirugía salió bien, sin embargo, la recuperación de la anestesia se complicó y Tristán no despertó. Sabemos que rescatar animales forma parte de vivir también experiencias de este tipo, no obstante, sabemos que los últimos meses de Tristán fueron rodeados de personas que lo querían y le procuraban el hogar seguro que se merecía. Agradecemos a voluntarios, socios y madrinas/padrinos por haberlo hecho posible. No te olvidaremos, Tristán.",
+        "age": 15,
+        "species":"horse",
+        "image":"/public/DeadAnimals/caballodead.png"
     },
     {
         "id": 2,
-        "name": "Nuvol",
-        "description": "Es una oveja que busca familia",
-        "age": 3
+        "name": "Lori",
+        "description": "Estrella llegó a nuestro refugio en 2023, después de ser rescatada de una vida de explotación. Era una gallina mayor, cansada y desconfiada. Con paciencia y amor, comenzamos a ver su brillo interior. Lori se convirtió en una fuente de inspiración para todos nosotros. En enero de 2024, Lori sufrió una recaída de sus problemas de salud. A pesar de los cuidados intensivos, su cuerpo no resistió. Lori nos dejó rodeada del cariño de sus cuidadores y amigos. Estamos agradecidos por haber podido ofrecerle un hogar donde conoció el amor verdadero. Lori, siempre iluminarás nuestros corazones.",
+        "age": 5,
+        "species":"chicken",
+        "image":"/public/DeadAnimals/gallinadead.png"
     },
     {
         "id": 3,
-        "name": "Floc",
-        "description": "Es una oveja que busca familia",
-        "age": 3
+        "name": "Bimba",
+        "description": "Bimba llegó a nosotros después de ser encontrada vagando por los campos en 2023. Era una oveja joven, pero ya había sufrido mucho. En sus primeros días, apenas podía mirarnos a los ojos, pero con amor y paciencia, comenzamos a ver su verdadera esencia. Se convirtió en una amiga leal, siempre pendiente de los demás. El pasado 23 de octubre de 2023, Lucía sufrió un colapso repentino. Pese a los esfuerzos del equipo veterinario, no pudimos salvarla. Bimba nos dejó demasiado pronto, pero sabemos que los meses que pasó con nosotros le dieron la paz y el cariño que nunca antes había tenido. Agradecemos a cada voluntario que hizo posible su transformación. Bimba, siempre vivirás en nuestros corazones.",
+        "age": 3,
+        "species":"sheep",
+        "image":"/public/DeadAnimals/ovejadead.png"
     },
     {
         "id": 4,
-        "name": "Flama",
-        "description": "Es una oveja que busca familia",
-        "age": 3
+        "name": "Queen",
+        "description": "Queen llegó a nuestro refugio después de ser rescatada de un entorno abusivo en 2020. Era una cabra temerosa que nunca había conocido la bondad. Con el tiempo, Queen floreció y se convirtió en la líder del rebaño, siempre dispuesta a cuidar de los más débiles. El 12 de agosto de 2023, Queen fue diagnosticada con una enfermedad incurable. Durante sus últimos días, le brindamos todo el amor y los cuidados posibles. Queen partió en paz, rodeada de sus amigos y cuidadores. Agradecemos a cada persona que nos ayudó a darle una vida mejor. Luna, tu espíritu vivirá siempre entre nosotros.",
+        "age": 7,
+        "species":"goat",
+        "image":"/public/DeadAnimals/cabradead.png"
+    },
+    {
+        "id": 5,
+        "name": "Usel",
+        "description": "Usel fue encontrado malnutrido y solo en las montañas en 2023. Aunque su cuerpo estaba débil, su espíritu era indomable. Con buena alimentación y mucho cariño, Usel recuperó fuerzas y se convirtió en un gallo lleno de energía y alegría. A principios de diciembre de 2023, Usel comenzó a mostrar signos de dolor severo. Tras una evaluación exhaustiva, los veterinarios decidieron realizar una cirugía de emergencia. Aunque la operación fue exitosa, Usel no despertó de la anestesia. Perdimos a Usel, pero sabemos que los años que pasó con nosotros fueron los mejores de su vida. Gracias a todos los que contribuyeron a su bienestar. Usel, siempre te recordaremos.",
+        "age": 3,
+        "species":"rooster",
+        "image":"/public/DeadAnimals/gallodead.png"
+    },
+    {
+        "id": 6,
+        "name": "Agnès",
+        "description": "Agnès fue rescatada de una vida en el campo en 2021. Había pasado sus primeros años sin conocer el afecto humano. Poco a poco, con dedicación y cariño, Agnès comenzó a confiar y a disfrutar de las caricias. A finales de marzo de 2024, Agnès enfermó gravemente. Tras varias pruebas, se decidió realizar una cirugía para remover un tumor en su abdomen. Lamentablemente, aunque la operación fue un éxito, Agnès no resistió el postoperatorio. Perdimos a Agnès, pero nos consuela saber que tuvo un final digno y rodeado de amor. Gracias a los socios y voluntarios que hicieron posible su rescate. Agnès, siempre serás parte de nuestra familia.",
+        "age": 12,
+        "species":"cow",
+        "image":"/public/DeadAnimals/vacadead.png"
     }
     
 ]
