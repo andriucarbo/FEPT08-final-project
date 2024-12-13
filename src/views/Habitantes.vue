@@ -90,12 +90,14 @@ export default {
 </div>
 </template>
 
+
 <script>
 import Carousel from "../components/Carousel.vue";
 import CarouselSlide from "../components/CarouselSlide.vue";
 
 // import { onMounted } from 'vue';
 import { useFarmAnimalPicsStore } from "../stores/farmAnimalPics";
+
 
 export default {
   name: "Habitantes",

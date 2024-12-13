@@ -5,18 +5,35 @@
     </div> -->
         <!-- Main -->
 <div class="main" >
+    <!-- Apartado Home "Conócenos - Conoce nuestra historia" -->
+    <div class="mainConocenos relative flex flex-col justify-center items-center w-full h-screen bg-cover bg-center" style="background-image: url('/ImagesHome/VacaPortada1.png')">
+        <!-- Video de fondo -->
+        <video 
+            autoplay 
+            loop 
+            muted 
+            playsinline 
+            class="absolute inset-0 w-full h-full object-cover z-0 filter brightness-75">
+            <source src="/public/video Historia/video_historia.mp4" type="video/mp4" />
+            Tu navegador no soporta videos HTML5.
+        </video>
 
-    <!-- Apartado home "conócenos - conoce nuestra historia" -->
-    <div class="mainConocenos bg-[url('/ImagesHome/VacaPortada1.png')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full h-full">
-        <div>
-            <h1 class="title1 text-5xl text-[#47462d] my-10 mx-20">Fundación <br> Santuario PATOdalavida</h1>
-            <p class="text1 text-3xl text-slate-50 text-center">Proporcionamos un espacio seguro para los animales considerados de granja.</p>
-            <p class="text1 text-2xl text-slate-50 mx-10 my-10 text-center">En 2024, Andrea y Vanessa dieron vida a PATOdalavida, un santuario pensado para ofrecer un entorno seguro y cálido a animales de granja. En este refugio, cada habitante encuentra un hogar lleno de amor y cuidado, donde pueden vivir tranquilos y felices. Andrea y Vanessa, con su dedicación y cariño, se aseguran de que todos los animales sean tratados con respeto.<br> PATOdalavida no solo es un refugio, sino también un lugar de descanso, donde la vida digna de cada animal es lo más importante. <br> Este santuario es un hermoso ejemplo de lo que se puede lograr con un corazón lleno de amor por los animales.</p>
-            <div class="buttonContainer flex justify-end pr-20 pt-96 mb-20 mr-10">
-                <button class="buttonnuestraHistoria text-xl p-4 text-[#857a5c] rounded hover:bg-neutral-50 hover:text-[#857a5c] focus:outline-none">Conoce nuestra historia</button>
-            </div> 
-        </div> 
-    </div>
+        <!-- Contenido sobre el video -->
+        <div class="relative z-10 text-center text-white p-6 md:p-10">
+            <h1 class="title1 text-5xl md:text-6xl lg:text-7xl text-[#47462d] my-10 mx-6 md:mx-10 bg-white bg-opacity-40 p-4 rounded leading-tight">
+                Fundación <br> Santuario PATOdalavida
+            </h1>
+            <p class="text1 text-2xl md:text-3xl lg:text-4xl text-slate-50 my-4 leading-snug">
+                Proporcionamos un espacio seguro para los animales considerados de granja.
+            </p>
+            <div class="buttonContainer flex justify-center mt-6 md:mt-10">
+                <button class="buttonnuestraHistoria text-xl p-4 text-[#857a5c] rounded bg-white bg-opacity-70 hover:bg-neutral-50 hover:text-[#857a5c] focus:outline-none">
+                    Conoce nuestra historia
+                </button>
+            </div>
+        </div>
+    </div> 
+
 
     <!-- Apartado carrusel Nuestros valores -->
     <div class="mainValores flex flex-row items-stretch m-10" >
@@ -241,12 +258,13 @@ export default {
 
 <style>
 
-.title1, .text1, .buttonnuestraHistoria, .buttontienda  {
+.title1, .text1, .buttonnuestraHistoria, .buttontienda {
     font-family: 'Crimson Text', serif;
 }
 
 .buttonnuestraHistoria, .buttontienda {
     background-color: #e2d9c7;
 }
+
 
 </style>
