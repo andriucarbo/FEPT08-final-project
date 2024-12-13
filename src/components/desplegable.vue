@@ -11,12 +11,16 @@
     <div v-if="activeDropdown === 'conocenos'" 
     class="absolute left-0 mt-2 bg-white shadow-lg rounded w-48">
     <ul class="flex flex-col">
-        <li class="px-4 py-2 hover:bg-gray-100">Historia</li>
-        <li class="px-4 py-2 hover:bg-gray-100">Equipo</li>
-        <li class="px-4 py-2 hover:bg-gray-100">Misión</li>
+        <router-link to="/conocenos/historia" class="px-4 py-2 hover:bg-gray-100">Historia</router-link>
+        <!-- <li class="px-4 py-2 hover:bg-gray-100">Historia</li> -->
+        <router-link to="/conocenos/Mision" class="px-4 py-2 hover:bg-gray-100">Misión</router-link>
+        <!-- <li class="px-4 py-2 hover:bg-gray-100">Equipo</li> -->
+        <router-link to="/conocenos/equipo" class="px-4 py-2 hover:bg-gray-100">Equipo</router-link>
+        <!-- <li class="px-4 py-2 hover:bg-gray-100">Misión</li> -->
     </ul>
     </div>
 </div>
+
 
 
 <div class="relative">

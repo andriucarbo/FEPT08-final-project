@@ -66,12 +66,12 @@ Dentro del archivo, crear los componentes que tiene (la estructura que queremos 
       const loadSheepPics = () => {
         farmAnimalPicsStore.fetchSheepPics();
       };
-      const imageCount = computed(() => farmAnimalPicsStore.animalPics.length);
+      const animalPics = computed(() => farmAnimalPicsStore);
 
       return {
-        animalPics: farmAnimalPicsStore.animalPics,
+        animalPics,
         loadSheepPics,
-        imageCount,
+      
       };
     },
   };

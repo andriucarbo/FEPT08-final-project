@@ -33,7 +33,7 @@ import { defineStore } from "pinia";
 export const useFarmAnimalPicsStore = defineStore("farmAnimalPics", {
   // state
   state: () => ({
-    animalPic: [],  // Cambiar a plural y usar el nombre correcto
+    animalPics: [],  // Cambiar a plural y usar el nombre correcto
   }),
   // getters
   getters: {
