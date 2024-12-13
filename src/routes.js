@@ -13,8 +13,17 @@ import Dona from './views/Donativos.vue'
 import Voluntariado from "./views/Voluntariado.vue"
 import BeneficiosFiscales from "./views/BeneficiosFiscales.vue"
 
+// firebase vista
+import Familia from'./views/Familia.vue'
+
 
 const routes = [
+
+    {   path: "Familia",
+        name: "Familia",
+        component: Familia,
+        //aquí pondremos las siguientes rutas
+    },
     {   path: "/",
         name: "Home",
         component: Home,
