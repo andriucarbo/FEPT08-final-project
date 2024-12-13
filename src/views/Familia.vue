@@ -12,6 +12,7 @@
 
 
 export default {
+    name: "Familia",
     data(){
         deadAnimals: []
     },
