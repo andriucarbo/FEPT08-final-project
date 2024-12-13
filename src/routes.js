@@ -65,7 +65,7 @@ const routes = [
             {
                 path: "mision",
                 name: "Mision",
-                components: Mision,
+                component: Mision,
             },
         ]
         },
@@ -74,7 +74,7 @@ const routes = [
             name:"Habitantes",
             component: Habitantes,
         },
-       
+
         //children: [
         //     {
         //         path: 'mision',
