@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <div class="beneficios_info flex flex-row justify-evenly items-center mb-20 row-span-4">
+            <div class="beneficios_info flex flex-row justify-evenly items-center mb-20">
                 <img src="/public/BeneficiosImages/personaFisica.png" alt="Beneficios fiscales persona física"
                     class="rounded-md">
                 <img src="/public/BeneficiosImages/personaJuridica.png" alt="Beneficios persona jurídica"
