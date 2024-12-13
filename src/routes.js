@@ -19,7 +19,7 @@ import Familia from'./views/Familia.vue'
 
 const routes = [
 
-    {   path: "Familia",
+    {   path: "/familia",
         name: "Familia",
         component: Familia,
         //aquí pondremos las siguientes rutas
