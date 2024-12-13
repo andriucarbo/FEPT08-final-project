@@ -23,35 +23,37 @@ export default {
     components: { FavoritesList }, 
     data(){
         return{
-            animals: [{
-        id: 1,
-        name: "Mariano",
-        description: "Es una gallina que busca familia",
-        age: 3
-    },
-    {
-        id: 2,
-        name: "Nuvol",
-        description: "Es una oveja que busca familia",
-        age: 3
-    },
-    {
-        id: 3,
-        name: "Floc",
-        description: "Es una gato que busca familia",
-        age: 3
-    },
-    {
-        id: 4,
-        name: "Flama",
-        description: "Es una vaca que busca familia",
-        age: 3
-    },],
-
-
-
+            animals: []
         }
     },
+    //         animals: [{
+    //     id: 1,
+    //     name: "Mariano",
+    //     description: "Es una gallina que busca familia",
+    //     age: 3
+    // },
+    // {
+    //     id: 2,
+    //     name: "Nuvol",
+    //     description: "Es una oveja que busca familia",
+    //     age: 3
+    // },
+    // {
+    //     id: 3,
+    //     name: "Floc",
+    //     description: "Es una gato que busca familia",
+    //     age: 3
+    // },
+    // {
+    //     id: 4,
+    //     name: "Flama",
+    //     description: "Es una vaca que busca familia",
+    //     age: 3
+    // },],
+
+
+
+        
     // mounted(){
     //     this.getAnimals()
     // },
@@ -61,7 +63,7 @@ export default {
             try{
                 const response = await fetch("../animals.json")
                 // const data = await response.js()
-                this.animals = response;
+                this.animals = data;
 
             }catch(error){
                 console.log(error)

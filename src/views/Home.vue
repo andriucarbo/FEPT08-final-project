@@ -269,4 +269,4 @@ export default {
 
 </style>
 
-<!-- Hacer responsive -->
+
