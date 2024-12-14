@@ -12,9 +12,14 @@ import Habitantes from './views/Habitantes.vue'
 import Dona from './views/Donativos.vue'
 import Voluntariado from "./views/Voluntariado.vue"
 import BeneficiosFiscales from "./views/BeneficiosFiscales.vue"
+import OtrasDonaciones from "./views/OtrasDonaciones.vue"
+import HabitantesVacas from "./views/HabitantesVacas.vue"
+import HabitantesGeneral from "./views/HabitantesGeneral.vue"
+import HabitantesCerdos from "./views/HabitantesCerdos.vue"
 
 // firebase vista
 import Familia from'./views/Familia.vue'
+
 
 
 const routes = [
@@ -22,13 +27,14 @@ const routes = [
     {   path: "/familia",
         name: "Familia",
         component: Familia,
-        //aquí pondremos las siguientes rutas
     },
+
     {   path: "/",
         name: "Home",
         component: Home,
-        //aquí pondremos las siguientes rutas
+
     },
+
     {   path: "/colabora",
         name: "Colabora",
         component: Colabora,
@@ -52,6 +58,10 @@ const routes = [
             {
                 path:'BeneficiosFiscales',
                 component:BeneficiosFiscales
+            },
+            {
+                path:'OtrasDonaciones',
+                component:OtrasDonaciones
             },
         ]
         },
@@ -78,24 +88,29 @@ const routes = [
             },
         ]
         },
-        {
-            path: "/habitantes",
-            name:"Habitantes",
-            component: Habitantes,
+    {
+        path: "/habitantesGeneral",
+        name:"HabitantesGeneral",
+        component: HabitantesGeneral,
+        children: [
+            {
+                path: "Habitantes",
+                name: "Habitantes",
+                component: Habitantes,
+            },
+            
+            {   path: "/HabitantesVacas",
+                name: "HabitantesVacas",
+                component: HabitantesVacas,
         },
-
-        //children: [
-        //     {
-        //         path: 'mision',
-        //         name: 'Mision',
-        //         component: Mision,
-        //     },
-        //     {
-        //         path: 'equipo',
-        //         name: 'Equipo',
-        //         component: Historia,
-        //     },
-        // ]
+        {   path: "/HabitantesCerdos",
+            name: "HabitantesCerdos",
+            component: HabitantesCerdos,
+    },
+    
+    ]
+        
+    },
     
 ];
 

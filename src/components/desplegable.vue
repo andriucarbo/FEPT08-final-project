@@ -30,7 +30,7 @@
     <div v-if="activeDropdown === 'habitantes'" 
     class="absolute left-0 mt-2 bg-white shadow-lg rounded w-48">
     <ul class="flex flex-col">
-        <li class="px-4 py-2 hover:bg-gray-100">Habitantes</li>
+        <router-link to="/HabitantesGeneral/Habitantes" class="px-4 py-2 hover:bg-gray-100">Habitantes</router-link>
         <li class="px-4 py-2 hover:bg-gray-100">En memoria</li>
     </ul>
     </div>
@@ -46,12 +46,11 @@
     <ul class="flex flex-col">
         <!-- <li class="px-4 py-2 hover:bg-gray-100">Hazte socio</li> -->
         <router-link to="/Colabora/HazteSocio" class="px-4 py-2 hover:bg-gray-100">Hazte socio</router-link>
-    
         <router-link to="/Colabora/Amadrina" class="px-4 py-2 hover:bg-gray-100">Amadrina</router-link>
         <router-link to="/Colabora/Dona" class="px-4 py-2 hover:bg-gray-100">Dona</router-link>
         <router-link to="/Colabora/Voluntariado" class="px-4 py-2 hover:bg-gray-100">Voluntariado</router-link>
         <router-link to="/Colabora/BeneficiosFiscales" class="px-4 py-2 hover:bg-gray-100">Beneficios Fiscales</router-link>
-        <li class="px-4 py-2 hover:bg-gray-100">Otras formas de colaborar</li>
+        <router-link to="/Colabora/OtrasDonaciones" class="px-4 py-2 hover:bg-gray-100">Otras formas de colaborar</router-link>
     </ul>
     </div>
 </div>

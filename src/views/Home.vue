@@ -162,15 +162,6 @@
     </div> 
 </div>
 
-
-    <!-- <div class="mainReceta bg-green-400 flex flex-col justify-center items-center"  >
-        <p>Recetas</p>
-    </div> -->
-
-    <!-- <div class="mainNoticias bg-violet-300 flex flex-col justify-center items-center" >
-        <p>Noticias</p>
-    </div> -->
-
     <div class="mainTienda bg-[url('/public/ImagesHome/imagentienda.png')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full h-full">
         <div>
             <h1 class="title1 text-5xl text-[#47462d] my-20 mx-20 text-center">Tienda solidaria <br> Santuario PATOdalavida</h1>
@@ -180,14 +171,6 @@
                 <button class="buttontienda text-xl p-4 text-[#857a5c] rounded hover:bg-neutral-50 hover:text-[#857a5c] focus:outline-none ml-auto mr-36 mb-36">Accede a nuestra tienda</button>
             </div>
     </div>
-
-    <!-- <div class="mainContacto bg-teal-300 flex flex-col justify-center items-center" >
-        <p>Contacto</p>
-    </div> -->
-
-
-
-
 </template>
 
 
