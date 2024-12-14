@@ -21,13 +21,13 @@
                     </button>
                     <p>CABRAS</p>
                 </div>
-                <div class="donkey_button">
+                <div @click="navigateTo('/HabitantesBurros')"class="donkey_button">
                     <button>
                         <img src="/public/GridAnimalHabitantes/donkey.grid.png" alt="donkey">
                     </button>
                     <p>BURROS</p>
                 </div>
-                <div class="goat_button">
+                <div @click="navigateTo('/HabitantesCabras')" class="goat_button">
                     <button>
                         <img src="/public/GridAnimalHabitantes/goat.grid.png" alt="goat">
                     </button>
@@ -66,11 +66,13 @@ import { useRouter } from 'vue-router';
 // Importar el componente HabitantesVacas desde su ubicación
 import HabitantesVacas from '../views/HabitantesVacas.vue';
 import HabitantesCerdos from '../views/HabitantesCerdos.vue';
+import HabitantesBurros from '../views/HabitantesBurros.vue';
+import HabitantesCabras from '../views/HabitantesCabras.vue';
 
 
 export default {
     name: 'Grid',
-    components: { HabitantesVacas, HabitantesCerdos },
+    components: { HabitantesVacas, HabitantesCerdos, HabitantesBurros, HabitantesCabras },
 
      // Función setup para la Composition API 
     setup() { // Si está usando Vue 3 con Composition API

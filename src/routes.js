@@ -16,6 +16,8 @@ import OtrasDonaciones from "./views/OtrasDonaciones.vue"
 import HabitantesVacas from "./views/HabitantesVacas.vue"
 import HabitantesGeneral from "./views/HabitantesGeneral.vue"
 import HabitantesCerdos from "./views/HabitantesCerdos.vue"
+import HabitantesBurros from "./views/HabitantesBurros.vue"
+import HabitantesCabras from "./views/HabitantesCabras.vue"
 
 // firebase vista
 import Familia from'./views/Familia.vue'
@@ -106,7 +108,15 @@ const routes = [
         {   path: "/HabitantesCerdos",
             name: "HabitantesCerdos",
             component: HabitantesCerdos,
-    },
+        },
+        {   path: "/HabitantesBurros",
+            name: "HabitantesBurros",
+            component: HabitantesBurros,
+        },
+        {   path: "/HabitantesCabras",
+        name: "HabitantesCabras",
+        component: HabitantesCabras,
+        },
     
     ]
         

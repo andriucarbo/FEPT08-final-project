@@ -35,37 +35,9 @@
     </div> 
 
 
-    <!-- Apartado carrusel Nuestros valores -->
-    <div class="mainValores flex flex-row items-stretch m-10" >
-        
-        <carousel class=" bg-red-300" 
-            @next="next"
-            @prev="prev"
-        >
-            <carousel-slide v-for="(slide, index) in slides" 
-                :key="slide" 
-                :index="index"
-                :visibleSlide="visibleSlide"
-                :direction="direction"
-                >
-                <img :src="slide" />
-            </carousel-slide>
-        </carousel>
-        <div class="w-1/2 p-8 text-[#857a5c]">
-            <div class="text-center">
-                <p class="text1 text-2xl m-4 ">MISIÓN</p>
-                <p class="text1 text-center ">Preservar y recuperar el ecosistema de fauna y flora salvaje de nuestra zona tratando que haya el menor impacto humano. Educar a las personas para que nuestra misión llegue más lejos y pueda tener mayor impacto en la naturaleza.</p>
-                <p class="text1 text-2xl m-6">VISIÓN</p>
-                <p class="text1 text-center ">La naturaleza es perfecta y tiene sus propios sistemas de autorregulación, muchas veces incompresibles para la mente humana. El impacto de nuestra civilización no hace más que perjudicar el frágil equilibrio de nuestro planeta. Por ello nuestra visión es de máximo respeto y mínimo impacto para la naturaleza.</p>
-                <p class="text1 text-2xl m-6">VALORES</p>
-                <p class="text1 text-center">*Respeto hacia el medio natural*Responsabilidad*Concienciación*Compromiso*Desarrollo humano*</p>
-            </div>
-        </div>
-        
-
 </div>
 
-    </div>
+  
 
     <!-- Apartado Conoce a nuestros habitantes -->
     <div class="mainHabitantes bg-[#e2d9c7] flex flex-col justify-center items-center border-b border-[#47462d]/50 ml-20 mr-20" >
@@ -178,8 +150,7 @@
 import CardHabitantes from '../components/CardHabitantes.vue';
 import Contador from '../components/Contador.vue';
 import FlipCard from '../components/FlipCard.vue';    
-import Carousel from '../components/Carousel.vue';
-import CarouselSlide from '../components/CarouselSlide.vue';    
+
 
 
 // importación de pinia counterDemo
@@ -188,53 +159,15 @@ import CarouselSlide from '../components/CarouselSlide.vue';
 
 export default {
     name: "Home",
-    components: {CardHabitantes, Carousel, CarouselSlide, Contador, FlipCard, },
-    data(){
-        return{
-            slides: [
-                '/public/CarouselPics/hens (Sitio web).png',
-                '/public/CarouselPics/baby goat (Sitio web).png',
-                '/public/CarouselPics/vacas grupo (Sitio web).png',
-                '/public/CarouselPics/goats comiendo (Sitio web).png',
-                '/public/CarouselPics/caballos (Sitio web).png'
-            ],
-            visibleSlide : 0, //en el principio muestrame la primera imagen
-            direction: 'left',
-        }
-    },
-
-
+    components: {CardHabitantes, Contador, FlipCard, },
+    
 // necesario para pinia
     // computed:{
     //     // se llama counter porque quiero trabajar sobre counterStore, si quisiera trabajar con products se llamaría product
     //     counter(){
     //         return useCounterDemoStore()
     //     }}
-    
 
-    computed: {
-        slidesLen(){
-            return this.slides.length;
-        }
-    },
-
-    methods: {
-        next(){
-            if(this.visibleSlide >= this.slidesLen - 1){
-                this.visibleSlide = 0;
-            }else{
-                this.visibleSlide++;
-            }
-            this.direction = "left"
-        },
-        prev(){
-            if(this.visibleSlide <= 0){
-                this.visibleSlide = this.slidesLen - 1;
-            }else{
-                this.visibleSlide--;
-            }
-            this.direction = "right"
-        },}
     }
 </script>
 
@@ -248,6 +181,7 @@ export default {
 .buttonnuestraHistoria, .buttontienda {
     background-color: #e2d9c7;
 }
+
 
 
 </style>

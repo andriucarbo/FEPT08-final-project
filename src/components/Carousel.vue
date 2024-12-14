@@ -44,6 +44,7 @@ export default {
         overflow: hidden;
         
     }
+    
     button.next {
         position: absolute;
         height: 40px;
