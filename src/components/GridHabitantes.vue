@@ -3,7 +3,8 @@
         <div class="container ml-20">
             <div class="grid_habitantes grid grid-cols-3 gap-4 text-center text-[#47462d] items-baseline">
                 <div class="cow_button">
-                    <button>
+                    <button @click="navigateTo('/HabitantesVacas')">
+                        <!-- <button @click="navigateTo('HabitantesVacas')"></button> -->
                         <img src="/public/GridAnimalHabitantes/cow.grid.png" alt="cow" class="h-full">
                     </button>
                     <p>VACAS</p>
@@ -33,7 +34,7 @@
                     <p>OVEJAS</p>
                 </div>
                 <div class="pig_button">
-                    <button>
+                    <button @click="navigateTo('/HabitantesCerdos')">
                         <img src="/public/GridAnimalHabitantes/pig.grid.png" alt="pig">
                     </button>
                     <p>CERDOS</p>
@@ -53,20 +54,36 @@
 
             </div>
         </div>
-        
+
     </div>
 </template>
 
 
-
-
-
-
 <script>
+// Importar la función useRouter del paquete vue-router
+import { useRouter } from 'vue-router';
+
+// Importar el componente HabitantesVacas desde su ubicación
+import HabitantesVacas from '../views/HabitantesVacas.vue';
+import HabitantesCerdos from '../views/HabitantesCerdos.vue';
+
+
 export default {
-    
-}
+    name: 'Grid',
+    components: { HabitantesVacas, HabitantesCerdos },
+
+     // Función setup para la Composition API 
+    setup() { // Si está usando Vue 3 con Composition API
+        const router = useRouter();
+    // Definir una función para navegar a una ruta
+        const navigateTo = (route) => {
+            router.push(route);
+        };
+    // Retornar un objeto con las funciones y variables que se quieren exponer al template
+        return { navigateTo };
+    },
+};
+
+
 </script>
-<style>
-    
-</style>
+<style></style>
