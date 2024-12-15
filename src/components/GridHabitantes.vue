@@ -14,7 +14,7 @@
                     </button>
                     <p>CABALLOS</p>
                 </div>
-                <div class="sheep_button">
+                <div @click="navigateTo('/HabitantesCabras')" class="sheep_button">
                     <button>
                         <img src="/public/GridAnimalHabitantes/sheep.grid.png" alt="sheep">
                     </button>
@@ -26,7 +26,9 @@
                     </button>
                     <p>BURROS</p>
                 </div>
+
                 <div class="goat_button" @click="navigateTo('/HabitantesCabras')">
+
                     <button>
                         <img src="/public/GridAnimalHabitantes/goat.grid.png" alt="goat">
                     </button>

@@ -1,7 +1,15 @@
 <template>
 <div>
 
-<nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10">
+<!-- <nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10"> -->
+    <nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10">
+      <!-- Botón con menú desplegable -->
+      <button 
+        class="hamburger md:hidden px-4 py-2 text-lg focus:outline-none"  
+        @click="toggleMobileMenu">
+        ☰
+      </button>
+    
 <!-- Botón con menú desplegable -->
 <div class="relative">
     <button class="conocenos px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 

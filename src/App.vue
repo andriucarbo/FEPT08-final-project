@@ -50,6 +50,51 @@
       </div>
     </div>
 
+<!-- LOGO FUNDACIÓN PATOdalavida -->
+ <!--MENU HAMBURGUESA-->
+    <nav class="navbar flex flex-wrap justify-center gap-10 px-4 py-2 items-center z-50">
+      <img class="logotipo rounded-full w-24 h-24 ml-6" src="/LogoProvisional.png" alt="logo provisional">
+      <button 
+      class="hamburger md:hidden px-4 py-2 text-lg focus:outline-none"  
+      @click="toggleMobileMenu">
+        ☰
+      </button>
+      <desplegable/> 
+      <!-- Menú completo (escondido en pantallas pequeñas) -->
+      <div :class="{'hidden': !isMobileMenuOpen}" class="w-full md:flex md:w-auto">
+        <div class="relative" v-for="(item, index) in menuItems" :key="index">
+          <button class="px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
+          @click="toggleDropdown(item.name)">
+            {{ item.label }}
+          </button>
+
+          <div v-if="activeDropdown === item.name" 
+          class="absolute left-0 mt-2 bg-white shadow-lg rounded w-48">
+            <ul class="flex flex-col">
+              <li v-for="(link, index) in item.links" :key="index" class="px-4 py-2 hover:bg-gray-100">
+                <router-link :to="link.to">{{ link.text }}</router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!-- FIN NAVBAR -->
+
+<!-- BOTÓN FIJO LATERAL DERECHO SOCIAL MEDIA -->
+<div class="fixed right-4 bottom-4 flex space-x-4">
+  <button class="w-32 h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">Dona</button>
+  <button class="w-32 h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">
+    <span class="material-symbols-outlined">Síguenos</span>
+  </button>
+</div>
+
+<div>
+    <Router-view/>
+</div>
+</div>
+
+
     <!-- FOOTER -->
     <footer class="footer bg-[#47462d] mt-auto text-[#e2d9c7] text-xl">
       <div class="container mx-auto px-6 py-10">
@@ -163,10 +208,10 @@
 </template>
 
 <script>
-import desplegable from './components/desplegable.vue';
-import { useRouter } from 'vue-router';
+import desplegable from '/components/desplegable.vue';
+import { useRouter } from 'view-router';
 
-export default {
+export default { 
   name: "App",
   components: { desplegable },
 
@@ -204,7 +249,8 @@ export default {
 </script>
 
 
-<style scoped>
+
+<style>
 .app {
   min-height: 100vh;
   display: flex;
