@@ -19,9 +19,33 @@
       </button>
     </div>
 <!-- LOGO FUNDACIÓN PATOdalavida -->
-    <nav class="navbar flex justify-center gap- items-center">
+ <!--MENU HAMBURGUESA-->
+    <nav class="navbar flex flex-wrap justify-center gap-10 px-4 py-2 items-center z-50">
       <img class="logotipo rounded-full w-24 h-24 ml-6" src="/LogoProvisional.png" alt="logo provisional">
+      <button 
+      class="hamburger md:hidden px-4 py-2 text-lg focus:outline-none"  
+      @click="toggleMobileMenu">
+        ☰
+      </button>
       <desplegable/> 
+      <!-- Menú completo (escondido en pantallas pequeñas) -->
+      <div :class="{'hidden': !isMobileMenuOpen}" class="w-full md:flex md:w-auto">
+        <div class="relative" v-for="(item, index) in menuItems" :key="index">
+          <button class="px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
+          @click="toggleDropdown(item.name)">
+            {{ item.label }}
+          </button>
+
+          <div v-if="activeDropdown === item.name" 
+          class="absolute left-0 mt-2 bg-white shadow-lg rounded w-48">
+            <ul class="flex flex-col">
+              <li v-for="(link, index) in item.links" :key="index" class="px-4 py-2 hover:bg-gray-100">
+                <router-link :to="link.to">{{ link.text }}</router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 <!-- FIN NAVBAR -->
 
@@ -176,17 +200,19 @@
 import desplegable from './components/desplegable.vue';
 
 
+
+
 export default {
   name:"App",
   components: { desplegable, },
 
   data(){
     return{
-      
-    }
+    
   }
+}}
   
-}
+
 </script>
 
 <style>
@@ -197,6 +223,22 @@ export default {
     /* 100vh:asegura que el contenedor principal tenga un alto mínimo igual al 100% de la viewport visible */
     /* display:flex y flex-direction:column permite organizar los elementos en una columna vertical */
   }
+/*Esto sirve para que el desplegable de la NavBar no se quede detrás de las imágenes*/
+  .navbar-desplegable {
+    position: absolute; /* O fixed si es necesario */
+    z-index: 100;
+}
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
 
   .footer {
     padding: 0;
