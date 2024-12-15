@@ -3,20 +3,22 @@
     <!-- <div>
         <h2>{{counter.name}}</h2>
     </div> -->
+
+
         <!-- Main -->
 <div class="main" >
     <!-- Apartado Home "Conócenos - Conoce nuestra historia" -->
     <div class="mainConocenos relative flex flex-col justify-center items-center w-full h-screen bg-cover bg-center" style="background-image: url('/ImagesHome/VacaPortada1.png')">
         <!-- Video de fondo -->
-        <video 
+        <!-- <video 
             autoplay 
             loop 
             muted 
             playsinline 
             class="absolute inset-0 w-full h-full object-cover z-0 filter brightness-75">
-            <source src="/public/video Historia/video_historia.mp4" type="video/mp4" />
+            <source src="/VideoHistoria/.console.log('Home component loaded');video_historia.mp4" type="video/mp4" />
             Tu navegador no soporta videos HTML5.
-        </video>
+        </video> -->
 
         <!-- Contenido sobre el video -->
         <div class="relative z-10 text-center text-white p-6 md:p-10">
@@ -47,7 +49,7 @@
         <div class="CardH flex flex-wrap justify-center items-center w-full h-full mb-20">
             <CardHabitantes/>
             <div>
-                <button class="buttonnuestroshabitantes text-xl p-4 bg-[#857a5c] text-slate-50 rounded hover:bg-[#6e654c] hover:text-[#e2d9c7] focus:outline-none  ">Conoce a nuestros habitantes</button>
+                <button class="buttonnuestroshabitantes text-xl p-4 bg-[#857a5c] text-slate-50 rounded hover:bg-[#6e654c] hover:text-[#e2d9c7] focus:outline-none  "  @click="navigateTo('/HabitantesGeneral/Habitantes')">Conoce a nuestros habitantes</button>
             </div>
         </div> 
     </div>
@@ -69,12 +71,12 @@
 
 <div class="">
     <div class="flex flex-col justify-center ml-20">
-        <button class=" p-4 rounded shadow text-center border-b-2 border-[#47462d] hover:bg-[#e6dfd1]">
+        <button class=" p-4 rounded shadow text-center border-b-2 border-[#47462d] hover:bg-[#e6dfd1]" @click="navigateTo('/Colabora/HazteSocio')">
             <p class="text1 text-[#47462d] text-2xl ">Hazte socio/a</p>
             <p class="text1 text-[#47462d] text-l">Elige la cantidad mensual con la que quieres colaborar</p>
         </button>
 
-        <button class=" p-4 rounded shadow text-center hover:bg-[#e6dfd1]">
+        <button class=" p-4 rounded shadow text-center hover:bg-[#e6dfd1]" @click="navigateTo('/Colabora/Dona')">
             <p class="text1 text-[#47462d] text-2xl">Dona hoy</p>
             <p class="text1 text-[#47462d] text-l">Realiza tu donación para apoyar la misión de Santuario PATOdalavida</p>
         </button>
@@ -84,12 +86,12 @@
 </div>
 
     <div class=" mr-20 flex flex-col justify-center">
-        <button class=" p-4 rounded shadow text-center border-b-2 border-[#47462d] hover:bg-[#e6dfd1]">
+        <button class=" p-4 rounded shadow text-center border-b-2 border-[#47462d] hover:bg-[#e6dfd1]" @click="navigateTo('/Colabora/Amadrina')">
             <p class=" text1 text-[#47462d] text-2xl">Amadrina</p>
             <p class="text1 text-[#47462d] text-l">Los habitantes necesitan padrinos y madrinas que nos ayuden a cuidarles</p>
         </button>
 
-        <button class=" p-4 rounded shadow text-center hover:bg-[#e6dfd1] mb-20">
+        <button class=" p-4 rounded shadow text-center hover:bg-[#e6dfd1] mb-20"@click="navigateTo('/Colabora/Voluntariado')">
             <p class="text1 text-[#47462d] text-2xl">Voluntariado</p>
             <p class="text1 text-[#47462d] text-l">Ayuda en el trabajo del día a día</p>
         </button>
@@ -139,34 +141,37 @@
             <h1 class="title1 text-5xl text-[#47462d] my-20 mx-20 text-center">Tienda solidaria <br> Santuario PATOdalavida</h1>
             <p class="text1 text-3xl text-[#47462d] text-center">Ayúdanos a cambiar su mundo.</p> 
         </div> 
+
         <div class="buttonContainer flex justify-center w-full mt-8">
+            <!-- Botón que lleva al mensaje -->
                 <button class="buttontienda text-xl p-4 text-[#857a5c] rounded hover:bg-neutral-50 hover:text-[#857a5c] focus:outline-none ml-auto mr-36 mb-36">Accede a nuestra tienda</button>
             </div>
     </div>
 </template>
 
 
+
 <script>
 import CardHabitantes from '../components/CardHabitantes.vue';
 import Contador from '../components/Contador.vue';
-import FlipCard from '../components/FlipCard.vue';    
+import FlipCard from '../components/FlipCard.vue';  
+
+import { useRouter } from 'vue-router';
 
 
 
-// importación de pinia counterDemo
 
-// import useCounterDemoStore from '../stores/counterDemo.js';
 
 export default {
     name: "Home",
     components: {CardHabitantes, Contador, FlipCard, },
-    
-// necesario para pinia
-    // computed:{
-    //     // se llama counter porque quiero trabajar sobre counterStore, si quisiera trabajar con products se llamaría product
-    //     counter(){
-    //         return useCounterDemoStore()
-    //     }}
+    setup() { 
+        const router = useRouter(); 
+        const navigateTo = (route) => { 
+            router.push(route); 
+        }; return { navigateTo 
+        }; 
+    },
 
     }
 </script>
