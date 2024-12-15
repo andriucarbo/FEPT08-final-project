@@ -18,6 +18,7 @@ import HabitantesGeneral from "./views/HabitantesGeneral.vue"
 import HabitantesCerdos from "./views/HabitantesCerdos.vue"
 import HabitantesBurros from "./views/HabitantesBurros.vue"
 import HabitantesCabras from "./views/HabitantesCabras.vue"
+import PaginaEnConstruccion from "./views/PaginaEnConstruccion.vue"
 
 // firebase vista
 import Familia from'./views/Familia.vue'
@@ -120,6 +121,11 @@ const routes = [
     
     ]
         
+    },
+
+    {   path: "/PaginaEnConstruccion",
+        name: "PaginaEnConstruccion",
+        component: PaginaEnConstruccion,
     },
     
 ];

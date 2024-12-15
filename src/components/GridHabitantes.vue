@@ -1,10 +1,9 @@
 <template>
     <div>
-        <div class="container ml-20">
-            <div class="grid_habitantes grid grid-cols-3 gap-4 text-center text-[#47462d] items-baseline">
+        <div class="container mx-auto px-4 py-6 sm:py-8 md:py-10 lg:py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center text-[#47462d] items-baseline">
                 <div class="cow_button">
                     <button @click="navigateTo('/HabitantesVacas')">
-                        <!-- <button @click="navigateTo('HabitantesVacas')"></button> -->
                         <img src="/public/GridAnimalHabitantes/cow.grid.png" alt="cow" class="h-full">
                     </button>
                     <p>VACAS</p>
@@ -21,13 +20,13 @@
                     </button>
                     <p>CABRAS</p>
                 </div>
-                <div @click="navigateTo('/HabitantesBurros')"class="donkey_button">
+                <div class="donkey_button" @click="navigateTo('/HabitantesBurros')">
                     <button>
                         <img src="/public/GridAnimalHabitantes/donkey.grid.png" alt="donkey">
                     </button>
                     <p>BURROS</p>
                 </div>
-                <div @click="navigateTo('/HabitantesCabras')" class="goat_button">
+                <div class="goat_button" @click="navigateTo('/HabitantesCabras')">
                     <button>
                         <img src="/public/GridAnimalHabitantes/goat.grid.png" alt="goat">
                     </button>
@@ -51,19 +50,13 @@
                     </button>
                     <p>CONEJOS</p>
                 </div>
-
             </div>
         </div>
-
     </div>
 </template>
 
-
 <script>
-// Importar la función useRouter del paquete vue-router
 import { useRouter } from 'vue-router';
-
-// Importar el componente HabitantesVacas desde su ubicación
 import HabitantesVacas from '../views/HabitantesVacas.vue';
 import HabitantesCerdos from '../views/HabitantesCerdos.vue';
 import HabitantesBurros from '../views/HabitantesBurros.vue';
@@ -73,19 +66,44 @@ import HabitantesCabras from '../views/HabitantesCabras.vue';
 export default {
     name: 'Grid',
     components: { HabitantesVacas, HabitantesCerdos, HabitantesBurros, HabitantesCabras },
-
-     // Función setup para la Composition API 
-    setup() { // Si está usando Vue 3 con Composition API
+    setup() {
         const router = useRouter();
-    // Definir una función para navegar a una ruta
         const navigateTo = (route) => {
             router.push(route);
         };
-    // Retornar un objeto con las funciones y variables que se quieren exponer al template
         return { navigateTo };
     },
 };
-
-
 </script>
-<style></style>
+
+<style scoped>
+.grid_habitantes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    text-align: center;
+    color: #47462d;
+    align-items: baseline;
+}
+
+@media (min-width: 640px) {
+    .grid_habitantes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .grid_habitantes {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid_habitantes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+}
+</style>
