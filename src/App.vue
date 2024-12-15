@@ -2,6 +2,7 @@
   <div>
     <div class="app flex flex-col min-h-screen">
 
+<<<<<<< HEAD
       <!-- NAVBAR -->
       <!-- Iconos redes sociales -->
       <div class="SocialMedia flex flex-row justify-center gap-10 items-center py-2">
@@ -48,9 +49,28 @@
       <div>
         <router-view />
       </div>
+=======
+<!-- NAVBAR -->
+<!-- Iconos redes sociales -->
+<!-- icono 1 -->
+    <div class="SocialMedia flex flex-wrap justify-center gap-6 items-center py-2">
+      <!-- <div class="SocialMedia flex flex-wrap justify-center gap-6 items-center py-2"></div> before -->
+      <button class="Instagram">
+      <img src="../public/instagram-brands-solid.svg" alt="icono instagram" class="w-6 md:w-8">
+      </button>
+<!-- icono 2 -->
+      <button class="Facebook">
+        <img src="../public/facebook-brands-solid.svg" alt="icono facebook" class="w-6 md:w-8">
+      </button>
+<!-- icono 3 -->
+      <button class="Twitter">
+      <img src="../public/twitter-brands-solid.svg" alt="icono twitter" class="w-6 md:w-8">
+      </button>
+>>>>>>> 87755cf (Andrea 18.49, cambios)
     </div>
 
 <!-- LOGO FUNDACIÓN PATOdalavida -->
+<<<<<<< HEAD
  <!--MENU HAMBURGUESA-->
     <nav class="navbar flex flex-wrap justify-center gap-10 px-4 py-2 items-center z-50">
       <img class="logotipo rounded-full w-24 h-24 ml-6" src="/LogoProvisional.png" alt="logo provisional">
@@ -78,14 +98,35 @@
           </div>
         </div>
       </div>
+=======
+    <nav class="navbar flex flex-wrap justify-center items-center px-4 py-2 md:py-4" >
+    <img class="logotipo rounded-full w-16 h-16 md:w-24 md:h-24" src="/LogoProvisional.png" alt="logo provisional">
+      <!-- Botón Hamburguesa -->
+    <button 
+        class="hamburger md:hidden px-4 py-2 text-lg focus:outline-none"  
+        @click="toggleMobileMenu">
+        ☰
+    </button>
+      <!-- <img class="logotipo rounded-full w-16 h-16 md:w-24 md:h-24" src="/LogoProvisional.png" alt="logo provisional"> -->
+      <desplegable class="hidden md:block" :isMobileMenuOpen="isMobileMenuOpen"/> 
+>>>>>>> 87755cf (Andrea 18.49, cambios)
     </nav>
+
 <!-- FIN NAVBAR -->
 
-<!-- BOTÓN FIJO LATERAL DERECHO SOCIAL MEDIA -->
-<div class="fixed right-4 bottom-4 flex space-x-4">
+<!-- BOTÓN FIJO LATERAL DERECHO SOCIAL MEDIA sin ser responsive -->
+<!-- <div class="fixed right-4 bottom-4 flex space-x-4">
   <button class="w-32 h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">Dona</button>
   <button class="w-32 h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">
     <span class="material-symbols-outlined">Síguenos</span>
+  </button>
+</div> -->
+
+<!-- Botones fijos en el lateral derecho responsive -->
+<div class="fixed right-2 bottom-2 flex flex-col space-y-2 md:space-x-4 md:flex-row">
+  <button class="w-24 md:w-32 h-10 md:h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">Dona</button>
+  <button class="w-24 md:w-32 h-10 md:h-12 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">
+    <span class="material-symbols-outlined text-sm md:text-base">Síguenos</span>
   </button>
 </div>
 
@@ -95,6 +136,7 @@
 </div>
 
 
+<<<<<<< HEAD
     <!-- FOOTER -->
     <footer class="footer bg-[#47462d] mt-auto text-[#e2d9c7] text-xl">
       <div class="container mx-auto px-6 py-10">
@@ -115,6 +157,23 @@
                   <img src="../public/twitter-clarito.svg" alt="logo instagram" class="social_media-link-img w-8 h-8">
                 </a>
               </div>
+=======
+<!-- FOOTER sin ser responsive -->
+  <footer class="footer bg-[#47462d] mt-auto text-[#e2d9c7] text-base md:text-lg px-4 py-6">
+    <!-- mt-auto = margin top auto: hace que se ajuste al final del contenedo principal -->
+    <div class="container mx-auto px-6 py-10">
+      <div class="footer_body grid grid-cols-1 md:grid-cols-3 gap-50">
+        <!-- FOOTER ITEMS -->
+        <div class="footer_item flex flex-col items-start">
+          <div class="footer_socialmedia">
+            <h1 class="footer_logo">LOGO</h1>
+            <h3 class="footer_subtitle text-2xl underline">Redes sociales:</h3>
+            <!-- FOOTER SOCIAL LINK BODY -->
+            <div class="footer_social_link_body flex space-x-4 mb-4">
+              <a href="" class="footer_social_link pb-3 text-xl justify-items-start">
+                <img src="../public/instagram_claro.svg" alt="logo instagram" class="social_media-link-img w-8 h-8">
+              </a>
+>>>>>>> 87755cf (Andrea 18.49, cambios)
 
               <div class="space-y-2">
                 <button class="w-32 h-12 mr-4 bg-[#857a5c] text-white rounded hover:bg-[#6e654c]">
@@ -208,13 +267,19 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import desplegable from '/components/desplegable.vue';
 import { useRouter } from 'view-router';
+=======
+import desplegable from './components/desplegable.vue';
+import { ref } from 'vue';
+>>>>>>> 87755cf (Andrea 18.49, cambios)
 
 export default { 
   name: "App",
   components: { desplegable },
 
+<<<<<<< HEAD
   data() {
     return {
       showButton: false,
@@ -246,6 +311,29 @@ export default {
     return { navigateTo };
   }
 };
+=======
+export default {
+  name:"App",
+  components: { desplegable },
+  setup() {
+    const isMobileMenuOpen = ref(false);
+
+    function toggleMobileMenu() {
+      isMobileMenuOpen.value = !isMobileMenuOpen.value;
+      // Emitir evento a desplegable.vue
+      $emit('update:isMobileMenuOpen', isMobileMenuOpen.value);
+    }
+
+    return {
+      isMobileMenuOpen,
+      toggleMobileMenu
+      }
+    },
+  }
+
+  
+
+>>>>>>> 87755cf (Andrea 18.49, cambios)
 </script>
 
 
@@ -257,6 +345,7 @@ export default {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 .footer {
   padding: 0;
   margin: 0;
@@ -265,6 +354,21 @@ export default {
   text-decoration: none;
   padding: 50px 30px 20px;
 }
+=======
+  .navbar {
+    position: relative;
+    z-index: 50; /* Asegúrate de que sea mayor que el fondo */
+}
+
+  .footer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+    text-decoration: none;
+    padding:50px 30px 20px;
+  }
+>>>>>>> 87755cf (Andrea 18.49, cambios)
 
 .footer_body {
   display: flex;
