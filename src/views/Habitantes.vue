@@ -3,7 +3,7 @@
     <img :src="'/public/portadaHabitantes.png'" alt="imagen mujer dando de comer a cabras"
       class=" bg-cover bg-no-repeat bg-center  flex flex-col justify-center items-center w-full">
   </div>
-  <div class="dona_info">
+  <div class="texto">
     <h1 class="dona text-[#47462d] text-9xl text-center mt-20">
       Nuestros Habitantes
     </h1>
@@ -19,7 +19,7 @@
   </div>
 
 
-  <div class="dona_info">
+  <div class="texto">
     <h2 class="dona text-[#47462d] text-5xl text-center mt-20">
       Descubre las últimas aventuras de nuestros habitantes
     </h2>
@@ -35,9 +35,9 @@
     </carousel>
   </div>
 
-  <div class="flex justify-center mb-20">
+  <div class=" texto flex justify-center mb-20">
     <button type="submit"
-    class=" bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300">Apúntate a nuestra Newsletter</button>
+    class=" bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 text-2xl">Apúntate a nuestra Newsletter</button>
   </div>
 
   <router-view></router-view>
@@ -100,4 +100,9 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+
+.texto{
+  font-family: 'Crimson Text', serif;
+}
+</style>
