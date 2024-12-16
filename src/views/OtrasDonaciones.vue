@@ -1,6 +1,6 @@
 <template>
     <div class="encabezado">
-        <div class="donativo_imagen"> <img :src="'/public/OtrasDonacionesImages/OtrasDonacionesPortada.png'"
+        <div class="donativo_imagen"> <img :src="'/OtrasDonacionesImages/OtrasDonacionesPortada.png'"
                 alt="imagen vaca de espaldas"
                 class="bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full" /> </div>
         <div class="texto">
@@ -126,7 +126,7 @@ export default {
                 shortDescription: '¡Ahora puedes enviar dinero desde tu teléfono!',
                 fullDescription: [
                     { type: 'text', value: 'Ahora puedes colaborar con la Fundación Santuario PATOdalavida desde el móvil a través de Bizum.' },
-                    { type: 'image', value: '/public/OtrasDonacionesImages/BIZUM.png', alt: 'Descripción de la imagen' },
+                    { type: 'image', value: '/OtrasDonacionesImages/BIZUM.png', alt: 'Descripción de la imagen' },
                     { type: 'text', value: 'Envía tu donación usando el código 02165 o buscando nuestro nombre en la aplicación.' }
                 ]
             },
@@ -136,7 +136,7 @@ export default {
                 shortDescription: '¡Nos encanta ver a nuestros seguidores ayudar a los animales del santuario de una manera creativa!',
                 fullDescription: [
                     { type: 'text', value: 'Estas son algunas de las formas en las que puedes recaudar fondos para Santuario PATOdalavida' },
-                    { type: 'image', value: '/public/OtrasDonacionesImages/FACEBOOK.png', alt: 'Descripción de la imagen' }
+                    { type: 'image', value: '/OtrasDonacionesImages/FACEBOOK.png', alt: 'Descripción de la imagen' }
                 ]
             },
             // Donación criptomonedas
@@ -145,13 +145,13 @@ export default {
                 shortDescription: '¡Convierte Tokens en animales rescatados!',
                 fullDescription: [
                     { type: 'text', value: 'Gracias a tu donación podemos dar cuidados, la alimentación, el espacio y la atención médica a los animales que necesitan nuestra ayuda.' },
-                    { type: 'image', value: '/public/OtrasDonacionesImages/Token.png', alt: 'Descripción de la imagen' }
+                    { type: 'image', value: '/OtrasDonacionesImages/Token.png', alt: 'Descripción de la imagen' }
                 ]
             }
         ]);
 
         const selectedItem = ref(null);
-        const videoSource = '/public/OtrasDonacionesImages/voluntariavideo.mp4';
+        const videoSource = '/OtrasDonacionesImages/voluntariavideo.mp4';
         const router = useRouter();
 
         const toggleCard = (index) => {

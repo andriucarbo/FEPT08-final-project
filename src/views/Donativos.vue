@@ -2,7 +2,7 @@
     <div class="contenedor_donativo">
         <div class="donativo">
             <div class="donativo_imagen">
-                <img :src="'/public/DonaImages/DonaPortada.png'" alt="imagen vaca de espaldas"
+                <img :src="'/DonaImages/DonaPortada.png'" alt="imagen vaca de espaldas"
                     class="w-full h-auto bg-cover bg-no-repeat bg-center">
             </div>
             <div class="texto px-4 md:px-20 lg:px-36">

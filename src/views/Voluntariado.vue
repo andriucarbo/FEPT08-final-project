@@ -2,7 +2,7 @@
     <div class="contenedor_voluntario">
         <div class="voluntario">
             <div class="voluntarioVo_imagen">
-                <img :src="'/public/VoluntariadoImages/VoluntarioPortada.png'" alt="imagen lechón"
+                <img :src="'/VoluntariadoImages/VoluntarioPortada.png'" alt="imagen lechón"
                     class="bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full" />
             </div>
             <div class="texto mb-20">

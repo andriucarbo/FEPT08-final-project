@@ -2,7 +2,7 @@
     <div>
         <div class="texto">
             <div class="beneficios_imagen">
-                <img :src="'/public/BeneficiosImages/BeneficiosPortada.png'" alt="imagen lechón"
+                <img :src="'/BeneficiosImages/BeneficiosPortada.png'" alt="imagen lechón"
                     class="bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full h-1/3 sm:h-1/2 md:h-2/3 lg:h-full">
             </div>
             <div>
@@ -34,9 +34,9 @@
 
             <div
                 class="beneficios_info flex flex-col sm:flex-row justify-evenly items-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
-                <img src="/public/BeneficiosImages/personaFisica.png" alt="Beneficios fiscales persona física"
+                <img src="/BeneficiosImages/personaFisica.png" alt="Beneficios fiscales persona física"
                     class="rounded-md mb-4 sm:mb-0 w-full sm:w-auto">
-                <img src="/public/BeneficiosImages/personaJuridica.png" alt="Beneficios persona jurídica"
+                <img src="/BeneficiosImages/personaJuridica.png" alt="Beneficios persona jurídica"
                     class="rounded-md w-full sm:w-auto">
             </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="cabeceraMision relative flex flex-col justify-center items-center w-full h-[400px] m bg-cover bg-center bg-no-repeat" style="background-image: url('/public/MisionImages/caminoMision.png');">
+    <div class="cabeceraMision relative flex flex-col justify-center items-center w-full h-[400px] m bg-cover bg-center bg-no-repeat" style="background-image: url('/MisionImages/caminoMision.png');">
         <!-- Cabecera de la misión -->
     </div>
 
@@ -54,11 +54,11 @@ export default {
     data(){
         return{
             slides: [
-                '/public/CarouselPics/hens (Sitio web).png',
-                '/public/CarouselPics/baby goat (Sitio web).png',
-                '/public/CarouselPics/vacas grupo (Sitio web).png',
-                '/public/CarouselPics/goats comiendo (Sitio web).png',
-                '/public/CarouselPics/caballos (Sitio web).png'
+                '/CarouselPics/hens (Sitio web).png',
+                '/CarouselPics/baby goat (Sitio web).png',
+                '/CarouselPics/vacas grupo (Sitio web).png',
+                '/CarouselPics/goats comiendo (Sitio web).png',
+                '/CarouselPics/caballos (Sitio web).png'
             ],
             visibleSlide : 0, //en el principio muestrame la primera imagen
             direction: 'left',

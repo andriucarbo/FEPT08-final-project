@@ -2,7 +2,7 @@
     <div class="contenedor_socio">
         <div class="socio">
             <div class="socio_imagen">
-                <img src="/public/ColaboraImages/colabora_socio.png" alt="imagen niño y pollito con las cabezas juntas"
+                <img src="/ColaboraImages/colabora_socio.png" alt="imagen niño y pollito con las cabezas juntas"
                     class="w-full h-auto md:h-1/4 bg-cover bg-no-repeat bg-center">
             </div>
             <div class="socio">

@@ -121,9 +121,9 @@ export default {
         return {
             // DEFINIMOS LA LISTA DE 'paymentMethods' CON OBJETOS QUE CONTIENEN: src Y alt para cada método de pago
             paymentMethods: [
-            { src: "/public/PagosSocio/visa.svg", alt: "Visa" },
-            { src: "/public/PagosSocio/mastercard.svg", alt: "MasterCard" },
-            { src: "/public/PagosSocio/paypal.svg", alt: "PayPal" }
+            { src: "/PagosSocio/visa.svg", alt: "Visa" },
+            { src: "/PagosSocio/mastercard.svg", alt: "MasterCard" },
+            { src: "/PagosSocio/paypal.svg", alt: "PayPal" }
         ],
         // DEFINIMOS LA LISTA DE 'socialNetworks' COMO NULO
         selectedPaymentMethod: null,

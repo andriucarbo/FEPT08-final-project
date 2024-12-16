@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="vaca_imagen">
-            <img :src="'/public/HabitantesVacasImages/portadasvacas.png'" alt="imagen vaca de espaldas"
+            <img :src="'/HabitantesVacasImages/portadasvacas.png'" alt="imagen vaca de espaldas"
                 class=" bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full">
         </div>
         <div class="texto">
@@ -34,7 +34,7 @@
 
         <div
             class=" bg-white rounded-lg shadow-md p-4 flex flex-col justify-between ml-20 hover:scale-105 transition-transform duration-300">
-            <img src="/public/HabitantesVacasImages/1.png" alt="dos vacas en la montaña" class="object-cover mb-4">
+            <img src="/HabitantesVacasImages/1.png" alt="dos vacas en la montaña" class="object-cover mb-4">
             <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Margot</h3>
             <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Margot fue rescatada de un matadero clandestino
                 en las afueras de Valencia. Cuando la encontraron, estaba extremadamente delgada y con heridas por todo
@@ -50,7 +50,7 @@
 
         <div
             class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-            <img src="/public/HabitantesVacasImages/2.png" alt="dos vacas en la montaña" class="object-cover mb-4">
+            <img src="/HabitantesVacasImages/2.png" alt="dos vacas en la montaña" class="object-cover mb-4">
             <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Gaia</h3>
             <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Gaia llegó al santuario tras ser abandonada en
                 una carretera. Estaba tan débil que apenas podía mantenerse en pie. Los análisis revelaron que sufría
@@ -65,7 +65,7 @@
 
         <div
             class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-            <img src="/public/HabitantesVacasImages/5.png" alt="primer plano cara vaca" class="object-cover mb-4">
+            <img src="/HabitantesVacasImages/5.png" alt="primer plano cara vaca" class="object-cover mb-4">
             <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Olivia</h3>
             <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Olivia fue rescatada de una granja industrial
                 donde la mantenían constantemente preñada para producir leche. Cuando llegó al santuario, estaba agotada
@@ -79,7 +79,7 @@
 
         <div
             class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-            <img src="/public/HabitantesVacasImages/6.png" alt="vaca tumbada" class="object-cover mb-4">
+            <img src="/HabitantesVacasImages/6.png" alt="vaca tumbada" class="object-cover mb-4">
             <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Valeria</h3>
             <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Valeria fue encontrada atada a un árbol en un
                 bosque, abandonada a su suerte. Tenía graves problemas en las pezuñas por falta de cuidado y una
@@ -93,7 +93,7 @@
 
         <div
             class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-            <img src="/public/HabitantesVacasImages/7.png" alt="primer plano vaca marrón y blanca"
+            <img src="/HabitantesVacasImages/7.png" alt="primer plano vaca marrón y blanca"
                 class="object-cover mb-4">
             <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Manuela</h3>
             <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Manuela llegó al santuario tras ser rescatada de
@@ -107,7 +107,7 @@
 
         <div
             class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-            <img src="/public/HabitantesVacasImages/8.png" alt="primer plano vaca cara blanca"
+            <img src="/HabitantesVacasImages/8.png" alt="primer plano vaca cara blanca"
                 class="object-cover mb-4">
             <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Clara</h3>
             <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Clara fue rescatada de un matadero en la
@@ -122,7 +122,7 @@
 
         <div
             class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-            <img src="/public/HabitantesVacasImages/3.png" alt="primer plano toro marrón" class="object-cover mb-4">
+            <img src="/HabitantesVacasImages/3.png" alt="primer plano toro marrón" class="object-cover mb-4">
             <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Emilio</h3>
             <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Emilio fue rescatado siendo un ternero de una
                 granja de producción de carne. Estaba tan débil que los veterinarios temían por su vida. Gracias a los
@@ -134,7 +134,7 @@
 
         <div
             class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-            <img src="/public/HabitantesVacasImages/4.png" alt="perfil toro marrón" class="object-cover mb-4">
+            <img src="/HabitantesVacasImages/4.png" alt="perfil toro marrón" class="object-cover mb-4">
             <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Vicente</h3>
             <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Vicente llegó al santuario tras ser decomisado
                 en una operación contra el maltrato animal. Tenía múltiples heridas y cicatrices por todo el cuerpo. Con
@@ -148,7 +148,7 @@
 
         <div
             class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-            <img src="/public/HabitantesVacasImages/9.png" alt="vaca en hierba" class="object-cover mb-4">
+            <img src="/HabitantesVacasImages/9.png" alt="vaca en hierba" class="object-cover mb-4">
             <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Catalina</h3>
             <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Freser y Catalina fueron rescatados de una
                 explotación ganadera donde eran utilizados para producir carne. Ambos estaban destinados al matadero

@@ -1,5 +1,5 @@
 <template>
-  <div class="mainEquipo relative flex flex-col justify-center items-center w-full h-[400px] m bg-cover bg-center bg-no-repeat" style="background-image: url('/public/EquipoImages/CabeceraEquipo.png');"></div>
+  <div class="mainEquipo relative flex flex-col justify-center items-center w-full h-[400px] m bg-cover bg-center bg-no-repeat" style="background-image: url('/EquipoImages/CabeceraEquipo.png');"></div>
   
 <!-- Grid de fotos del equipo -->
 <div class="TeamContainer">
@@ -35,22 +35,22 @@ export default {
     return {
       teamMembers: [
         {
-          image: '/public/EquipoImages/Vanessa&Ona(vc).png',
+          image: '/EquipoImages/Vanessa&Ona(vc).png',
           name: 'Vanessa Cortés',
           position: 'Fundadora'
         },
         {
-          image: '/public/EquipoImages/AndreayKokis(vc).png',
+          image: '/EquipoImages/AndreayKokis(vc).png',
           name: 'Andrea Carbó',
           position: 'Fundadora'
         },
         {
-          image: '/public/EquipoImages/MichaelTeam.png',
+          image: '/EquipoImages/MichaelTeam.png',
           name: 'Michael Pérez',
           position: 'Veterinario'
         },
         {
-          image: '/public/EquipoImages/MartaTeam.png',
+          image: '/EquipoImages/MartaTeam.png',
           name: 'Marta Rodríguez',
           position: 'Asistente de Administración'
         }

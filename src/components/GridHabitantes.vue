@@ -4,25 +4,25 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center text-[#47462d] items-baseline">
                 <div class="cow_button">
                     <button @click="navigateTo('/HabitantesVacas')">
-                        <img src="/public/GridAnimalHabitantes/cow.grid.png" alt="cow" class="h-full">
+                        <img src="/GridAnimalHabitantes/cow.grid.png" alt="cow" class="h-full">
                     </button>
                     <p>VACAS</p>
                 </div>
                 <div class="horse_button">
                     <button>
-                        <img src="/public/GridAnimalHabitantes/horse.grid.png" alt="horse">
+                        <img src="/GridAnimalHabitantes/horse.grid.png" alt="horse">
                     </button>
                     <p>CABALLOS</p>
                 </div>
                 <div @click="navigateTo('/HabitantesCabras')" class="sheep_button">
                     <button>
-                        <img src="/public/GridAnimalHabitantes/sheep.grid.png" alt="sheep">
+                        <img src="/GridAnimalHabitantes/sheep.grid.png" alt="sheep">
                     </button>
                     <p>CABRAS</p>
                 </div>
                 <div class="donkey_button" @click="navigateTo('/HabitantesBurros')">
                     <button>
-                        <img src="/public/GridAnimalHabitantes/donkey.grid.png" alt="donkey">
+                        <img src="/GridAnimalHabitantes/donkey.grid.png" alt="donkey">
                     </button>
                     <p>BURROS</p>
                 </div>
@@ -30,25 +30,25 @@
                 <div class="goat_button" @click="navigateTo('/HabitantesCabras')">
 
                     <button>
-                        <img src="/public/GridAnimalHabitantes/goat.grid.png" alt="goat">
+                        <img src="/GridAnimalHabitantes/goat.grid.png" alt="goat">
                     </button>
                     <p>OVEJAS</p>
                 </div>
                 <div class="pig_button">
                     <button @click="navigateTo('/HabitantesCerdos')">
-                        <img src="/public/GridAnimalHabitantes/pig.grid.png" alt="pig">
+                        <img src="/GridAnimalHabitantes/pig.grid.png" alt="pig">
                     </button>
                     <p>CERDOS</p>
                 </div>
                 <div class="chicken_button">
                     <button>
-                        <img src="/public/GridAnimalHabitantes/chicken.grid.png" alt="chicken">
+                        <img src="/GridAnimalHabitantes/chicken.grid.png" alt="chicken">
                     </button>
                     <p>AVES</p>
                 </div>
                 <div class="rabbit_button">
                     <button>
-                        <img src="/public/GridAnimalHabitantes/rabbit.grid.png" alt="rabbit">
+                        <img src="/GridAnimalHabitantes/rabbit.grid.png" alt="rabbit">
                     </button>
                     <p>CONEJOS</p>
                 </div>

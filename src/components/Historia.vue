@@ -1,6 +1,6 @@
 <template>
 <div class="main">
-    <div class="mainEquipo relative flex flex-col justify-center items-center w-full h-[400px] m bg-cover bg-center bg-no-repeat" style="background-image: url('/public/ImagesHome/VaquitaDefinitivaPortada.png');"></div>
+    <div class="mainEquipo relative flex flex-col justify-center items-center w-full h-[400px] m bg-cover bg-center bg-no-repeat" style="background-image: url('/ImagesHome/VaquitaDefinitivaPortada.png');"></div>
 </div>
 
 

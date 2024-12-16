@@ -1,6 +1,6 @@
 <template>
   <div class="donativo_imagen">
-    <img :src="'/public/portadaHabitantes.png'" alt="imagen mujer dando de comer a cabras"
+    <img :src="'/portadaHabitantes.png'" alt="imagen mujer dando de comer a cabras"
       class=" bg-cover bg-no-repeat bg-center  flex flex-col justify-center items-center w-full">
   </div>
   <div class="texto">

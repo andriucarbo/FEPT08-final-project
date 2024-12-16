@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="vaca_imagen">
-                <img :src="'/public/HabitantesCerdosImages/portadacerdos.png'" alt="imagen vaca de espaldas"
+                <img :src="'/HabitantesCerdosImages/portadacerdos.png'" alt="imagen vaca de espaldas"
                     class=" bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full">
             </div>
             <div class="texto">
@@ -29,7 +29,7 @@
     <div class="texto grid_habitantes grid grid-cols-2 gap-12">
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between ml-20 hover:scale-105 transition-transform duration-300">
-                <img src="/public/HabitantesCerdosImages/1.png" alt="dos vacas en la montaña" class="object-cover mb-4">
+                <img src="/HabitantesCerdosImages/1.png" alt="dos vacas en la montaña" class="object-cover mb-4">
                 <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Bacon</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Bacon fue rescatado de un matadero clandestino donde vivía en condiciones deplorables. Al llegar al santuario, estaba desnutrido y asustado. Con paciencia y cuidados, Bacon recuperó su salud y confianza. Hoy es conocido por su personalidad juguetona y le encanta revolcarse en el barro con sus nuevos amigos.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
@@ -37,7 +37,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-                <img src="/public/HabitantesCerdosImages/2.png" alt="dos vacas en la montaña" class="object-cover mb-4">
+                <img src="/HabitantesCerdosImages/2.png" alt="dos vacas en la montaña" class="object-cover mb-4">
                 <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Panceta</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Panceta fue encontrada abandonada en una carretera, débil y enferma. Los cuidadores del santuario la acogieron y le brindaron atención veterinaria intensiva. Gracias a su espíritu luchador, Panceta se recuperó por completo. Ahora disfruta explorando los prados y tomando baños de sol.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
@@ -45,7 +45,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-                <img src="/public/HabitantesCerdosImages/3.png" alt="primer plano cara vaca" class="object-cover mb-4">
+                <img src="/HabitantesCerdosImages/3.png" alt="primer plano cara vaca" class="object-cover mb-4">
                 <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Lola</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Lola llegó al santuario después de ser rescatada de una granja industrial. Estaba aterrorizada y mostraba signos de estrés crónico. Con amor y tiempo, Lola aprendió a confiar en los humanos nuevamente. Hoy es una cerda feliz que adora recibir caricias y mimos de los visitantes.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
@@ -53,7 +53,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-                <img src="/public/HabitantesCerdosImages/4.png" alt="vaca tumbada" class="object-cover mb-4">
+                <img src="/HabitantesCerdosImages/4.png" alt="vaca tumbada" class="object-cover mb-4">
                 <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Gertrudis</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Gertrudis fue decomisada durante una redada en una granja ilegal. Tenía problemas de salud debido a la falta de cuidados adecuados. En el santuario, recibió tratamiento y una dieta nutritiva. Gertrudis se ha convertido en una cerda curiosa y sociable que disfruta aprendiendo nuevos trucos.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
@@ -61,7 +61,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-                <img src="/public/HabitantesCerdosImages/5.png" alt="primer plano vaca marrón y blanca" class="object-cover mb-4">
+                <img src="/HabitantesCerdosImages/5.png" alt="primer plano vaca marrón y blanca" class="object-cover mb-4">
                 <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Hugo</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Hugo escapó de un camión que lo llevaba al matadero y fue encontrado vagando por las calles. Estaba herido y asustado cuando llegó al santuario. Con paciencia y cariño, Hugo superó sus traumas. Ahora es conocido por su personalidad tranquila y su amor por los baños de lodo.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
@@ -69,7 +69,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-                <img src="/public/HabitantesCerdosImages/6.png" alt="primer plano vaca cara blanca" class="object-cover mb-4">
+                <img src="/HabitantesCerdosImages/6.png" alt="primer plano vaca cara blanca" class="object-cover mb-4">
                 <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Marcelo</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Marcelo fue rescatado de una situación de negligencia extrema en una pequeña granja. Estaba desnutrido y con problemas de piel. Gracias a los cuidados veterinarios y una alimentación adecuada, Marcelo se recuperó completamente. Hoy es un cerdo feliz que disfruta de la compañía de otros animales rescatados.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
@@ -77,14 +77,14 @@
 
 
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-                <img src="/public/HabitantesCerdosImages/7.png" alt="primer plano toro marrón" class="object-cover mb-4">
+                <img src="/HabitantesCerdosImages/7.png" alt="primer plano toro marrón" class="object-cover mb-4">
                 <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Ambrosio</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Ambrosio llegó al santuario después de ser utilizado en experimentos de laboratorio. Estaba traumatizado y rehuía el contacto humano. Con mucha paciencia y terapia, Ambrosio aprendió a confiar nuevamente. Ahora es un cerdo curioso que le encanta explorar su entorno.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
             </div>
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-                <img src="/public/HabitantesCerdosImages/8.png" alt="perfil toro marrón" class="object-cover mb-4">
+                <img src="/HabitantesCerdosImages/8.png" alt="perfil toro marrón" class="object-cover mb-4">
                 <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Jacinta</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Jacinta fue encontrada en una granja abandonada, sola y asustada. Al principio, se mostraba agresiva debido al miedo. Con amor y cuidados constantes, Jacinta se transformó en una cerda dulce y cariñosa. Hoy es la "mamá" adoptiva de otros animales rescatados más jóvenes.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
@@ -92,7 +92,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-                <img src="/public/HabitantesCerdosImages/9.png" alt="vaca en hierba" class="object-cover mb-4">
+                <img src="/HabitantesCerdosImages/9.png" alt="vaca en hierba" class="object-cover mb-4">
                 <h3 class="text-bold text-4xl text-center mx-12 my-6 text-[#47462d]">Roberta</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6 text-2xl">Roberta fue rescatada de un criadero ilegal donde vivía en condiciones insalubres. Tenía problemas respiratorios y estaba muy débil. Gracias a la atención veterinaria y mucho cariño, Roberta se recuperó por completo. Ahora es conocida por su personalidad vivaz y su amor por los juguetes.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 my-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>

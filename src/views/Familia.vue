@@ -20,9 +20,14 @@ export default {
     },
     async mounted() {
         try {
-            const data = await getDatabaseFam();
+            // 1- hacer fetch a json databaseFam
+            const response = await fetch("/public/databaseFam.json")
+            // 2- guardar en data 
+            const data = response.json();
             this.deadAnimals = data;
-            await updateDatabaseFam(this.deadAnimals);
+            // 3-modificar la base de datos
+            updateDatabaseFam(this.deadAnimals);
+            // 4-si queremos ver información en pantalla necesitamos la función getDatabaseFam (en dos funciones distintas, una recoge info y  la otra muestra)
         } catch (error) {
             console.error(error);
         }
