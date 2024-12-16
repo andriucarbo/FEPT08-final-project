@@ -1,9 +1,19 @@
 <template>
 <div>
 
-<nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10">
+<!-- <nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10"> -->
+    <nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10">
+      <!-- Botón con menú desplegable -->
+      <button 
+        class="hamburger md:hidden px-4 py-2 text-lg focus:outline-none"  
+        @click="toggleMobileMenu">
+        ☰
+      </button>
+    
 <!-- Botón con menú desplegable -->
-<div class="relative">
+<!-- Menú completo (escondido en pantallas pequeñas) -->
+<div :class="{'hidden': !isMobileMenuOpen}" class="w-full md:flex md:w-auto">
+    <div class="relative">
     <button class="conocenos px-4 py-2 hover:underline transition duration-600 ease-in-out cursor-pointer" 
     @click="toggleDropdown('conocenos')">Conócenos</button>
 
@@ -130,6 +140,7 @@
     </div> -->
 
 </div>
+</div>
 </nav>
 
         
@@ -139,10 +150,12 @@
 
 <script>
 export default {
-    props: ['title', 'options'], //en chatgpt no aparece props
+    props: ['title', 'options', ], //en chatgpt no aparece props
+    
     data(){
         return{
             activeDropdown: null, // controla qué menú está abierto
+        // controla el estado del menú móvil
         }
     },
     mounted(){
@@ -177,6 +190,18 @@ export default {
     .relative{
         font-size:large
     }
+
+    .hamburger {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }}
 </style>
 
 

@@ -29,9 +29,9 @@
                 Proporcionamos un espacio seguro para los animales considerados de granja.
             </p>
             <div class="buttonContainer flex justify-center mt-6 md:mt-10">
-                <button class="buttonnuestraHistoria text-xl p-4 text-[#857a5c] rounded bg-white bg-opacity-70 hover:bg-neutral-50 hover:text-[#857a5c] focus:outline-none">
+                <RouterLink to="/conocenos/historia" class="buttonnuestraHistoria text-xl p-4 text-[#857a5c] rounded bg-white bg-opacity-70 hover:bg-neutral-50 hover:text-[#857a5c] focus:outline-none">
                     Conoce nuestra historia
-                </button>
+                </RouterLink>
             </div>
         </div>
     </div> 
@@ -152,6 +152,7 @@
 
 
 <script>
+import { RouterLink } from 'vue-router';
 import CardHabitantes from '../components/CardHabitantes.vue';
 import Contador from '../components/Contador.vue';
 import FlipCard from '../components/FlipCard.vue';  
@@ -186,6 +187,8 @@ export default {
 .buttonnuestraHistoria, .buttontienda {
     background-color: #e2d9c7;
 }
+
+
 
 
 
