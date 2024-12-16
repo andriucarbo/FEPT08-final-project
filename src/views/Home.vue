@@ -10,15 +10,15 @@
     <!-- Apartado Home "Conócenos - Conoce nuestra historia" -->
     <div class="mainConocenos relative flex flex-col justify-center items-center w-full h-screen bg-cover bg-center" style="background-image: url('/ImagesHome/VacaPortada1.png')">
         <!-- Video de fondo -->
-        <!-- <video 
+        <video 
             autoplay 
             loop 
             muted 
             playsinline 
             class="absolute inset-0 w-full h-full object-cover z-0 filter brightness-75">
-            <source src="/VideoHistoria/.console.log('Home component loaded');video_historia.mp4" type="video/mp4" />
-            Tu navegador no soporta videos HTML5.
-        </video> -->
+            <source src="/public/VideoHistoria/video_historia.mp4" type="video/mp4" />
+            <!-- Tu navegador no soporta videos HTML5. -->
+        </video>
 
         <!-- Contenido sobre el video -->
         <div class="relative z-10 text-center text-white p-6 md:p-10">

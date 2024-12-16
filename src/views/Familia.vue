@@ -22,7 +22,8 @@ export default {
         async getDeadAnimals(){
             try {
             // 1- hacer fetch a json databaseFam
-            const response = await fetch("/databaseFam.json")
+            const response = await fetch("http://localhost:5173/databaseFam.json")
+            // http://localhost:5173/databaseFam.json
             // 2- guardar en data 
             const data = response.json();
             this.deadAnimals = data;
