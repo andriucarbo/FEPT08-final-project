@@ -4,7 +4,6 @@
 
         <button @click="next" class="next arrow-button absolute h-4 w-5 transition-all duration-300 ease-in-out ">
             <span>></span>
-       
         </button>
         <button @click="prev" class="prev arrow-button absolute h-4 w-5 transition-all duration-300 ease-in-out ">
             <span><</span>
