@@ -1,8 +1,8 @@
 <template>
     <div>
         <h1>Familia</h1>
-        <ul>
-            <li class=“flex mb-4” v-for='deadAnimal in deadAnimals' :key='deadAnimal.name'>
+        <ul v-if="deadAnimals.length">
+            <li class=“flex mb-4” v-for="deadAnimal in deadAnimals" :key="deadAnimal.name">
                 <p>{{ deadAnimal.name }}</p>
                 <p>{{ deadAnimal.description }}</p>
             </li>
@@ -18,10 +18,11 @@ export default {
             deadAnimals: []
         };
     },
-    async mounted() {
-        try {
+    methods:{
+        async getDeadAnimals(){
+            try {
             // 1- hacer fetch a json databaseFam
-            const response = await fetch("/public/databaseFam.json")
+            const response = await fetch("/databaseFam.json")
             // 2- guardar en data 
             const data = response.json();
             this.deadAnimals = data;
@@ -31,6 +32,12 @@ export default {
         } catch (error) {
             console.error(error);
         }
+        }
+
+    },
+    mounted() {
+        this.getDeadAnimals();
+        
     }
 };
 </script>
