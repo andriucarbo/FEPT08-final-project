@@ -62,7 +62,7 @@
 <div class="border-b border-[#47462d]/50 mx-20">
 <div class="grid grid-cols-2 gap-4">
     <div class="row-span-1  ml-60 mb-6">
-        <img src="/public/ImagesHome/niñacolaborahome.png" alt="niña abrazando a conejo" class="w-50%">
+        <img src="/public/ImagesHome/ninacolaborahome.png" alt="niña abrazando a conejo" class="w-50%">
     </div>
     
     <div class="flex justify-items-center ml-20">
@@ -110,33 +110,33 @@
     <div class=" text1 flex flex-wrap justify-center gap-8"> 
         <FlipCard 
         title="Visitas Escolares" 
-        image="/public/ImagesHome/educa.escuela.png" 
+        image="/ImagesHome/educa.escuela.png" 
         frontText=""    
         backText="La Fundación Santuario PATOdalavida ofrece visitar el centro a todas las escuelas y casales que tengan un interés pedagógico en los animales de granja, la conservación y la biodiversidad." />
         
 
         <FlipCard 
         title="Visitas técnicas" 
-        image="/public/ImagesHome/educa.practicas.png" 
+        image="/ImagesHome/educa.practicas.png" 
         frontText="" 
         backText="Formación enfocada a alumnos o trabajadores del ámbito veterinario" /> 
         
         <FlipCard 
         title="Visitas en familia" 
-        image="/public/ImagesHome/educa.familia.png" 
+        image="/ImagesHome/educa.familia.png" 
         frontText="" 
         backText="Visítanos en familia y conoce de primera mano la labor de la fundación" /> 
         
         <FlipCard 
         title="Suscripción mensual aprende desde casa" 
-        image="/public/ImagesHome/educa.material.png" 
+        image="/ImagesHome/educa.material.png" 
         frontText="" 
         backText="Únete a la Suscripción 'Farm Scout' y aprende desde casa, con fichas didácticas imprimibles, propuestas de juego y muchas sorpresas más" /> 
         
     </div> 
 </div>
 
-    <div class="mainTienda bg-[url('/public/ImagesHome/imagentienda.png')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full h-full">
+    <div class="mainTienda bg-[url('/ImagesHome/imagentienda.png')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full h-full">
         <div>
             <h1 class="title1 text-5xl text-[#47462d] my-20 mx-20 text-center">Tienda solidaria <br> Santuario PATOdalavida</h1>
             <p class="text1 text-3xl text-[#47462d] text-center">Ayúdanos a cambiar su mundo.</p> 

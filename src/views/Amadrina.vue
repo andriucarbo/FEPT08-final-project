@@ -2,7 +2,7 @@
     <div class="contenedor_amadrina">
         <div class="amadrina">
             <div class="amadrina__imagen">
-                <img src="/public/AmadrinaImages/AmadrinaPortada.png" alt="mujer abrazando a conejo blanco"
+                <img src="/AmadrinaImages/AmadrinaPortada.png" alt="mujer abrazando a conejo blanco"
                     class="w-full h-auto md:h-1/3 bg-cover bg-no-repeat bg-center">
             </div>
 
@@ -58,7 +58,7 @@
 
             <div class="beneficios_amadrinar px-4 md:px-20 py-10 md:py-20">
                 <div class="beneficios_amadrinar_texto flex flex-col md:flex-row items-center">
-                    <img src="/public/AmadrinaImages/certificado.png" alt="imagen certificado y pegatina"
+                    <img src="/AmadrinaImages/certificado.png" alt="imagen certificado y pegatina"
                         class="mb-6 md:mb-0 md:mr-14 w-full md:w-1/2">
                     <p class="texto mb-8 md:mb-14 text-center text-lg md:text-2xl">Al amadrinar estarás salvando una
                         vida y recibirás un certificado oficial de amadrinamiento con la foto a color de tu ahijada/o.
@@ -91,17 +91,17 @@
                 </h1>
                 <div class="grid-ayuda grid grid-cols-1 md:grid-cols-3 gap-4 mx-4 md:mx-20 my-10 md:my-20">
                     <div class="bg-[#857a5c] text-white p-6 text-center rounded-lg shadow-md">
-                        <img src="/public/carrot.svg" alt="carrot Icon" class="mb-4 mx-auto">
+                        <img src="/carrot.svg" alt="carrot Icon" class="mb-4 mx-auto">
                         <p class="texto text-lg md:text-2xl">Recibe cada día una alimentación rica en nutrientes que le
                             ayuda a mantenerse sano y disfrutar.</p>
                     </div>
                     <div class="bg-[#857a5c] text-white p-6 text-center rounded-lg shadow-md">
-                        <img src="/public/house.svg" alt="House Icon" class="mb-4 mx-auto">
+                        <img src="/house.svg" alt="House Icon" class="mb-4 mx-auto">
                         <p class="texto text-lg md:text-2xl">Se cubren los gastos de los tratamiento médicos y
                             veterinarios para que esté sano.</p>
                     </div>
                     <div class="bg-[#857a5c] text-white p-6 text-center rounded-lg shadow-md">
-                        <img src="/public/heart-regular.svg" alt="Heart Icon" class="mb-4 mx-auto">
+                        <img src="/heart-regular.svg" alt="Heart Icon" class="mb-4 mx-auto">
                         <p class="texto text-lg md:text-2xl">Les das un lugar donde vivir y sentirse protegido y seguro.
                         </p>
                     </div>
@@ -125,12 +125,12 @@ export default {
     data() {
         return {
             images: [
-                "/public/AmadrinaImages/caroussel.amadrina.1.png",
-                "/public/AmadrinaImages/caroussel.amadrina.2.png",
-                "/public/AmadrinaImages/caroussel.amadrina.3.png",
-                "/public/AmadrinaImages/caroussel.amadrina.4.png",
-                "/public/AmadrinaImages/caroussel.amadrina.5.png",
-                "/public/AmadrinaImages/caroussel.amadrina.6.png"
+                "/AmadrinaImages/caroussel.amadrina.1.png",
+                "/AmadrinaImages/caroussel.amadrina.2.png",
+                "/AmadrinaImages/caroussel.amadrina.3.png",
+                "/AmadrinaImages/caroussel.amadrina.4.png",
+                "/AmadrinaImages/caroussel.amadrina.5.png",
+                "/AmadrinaImages/caroussel.amadrina.6.png"
             ],
             // indica el índice de la imagen del caroussel
             currentIndex: 0,

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div></div>
         <div class="burro_imagen">
                 <img :src="'/public/HabitantesCabrasImages/CabraPortada.png'" alt="imagen burro comiendo"
                     class=" bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center w-full">
@@ -20,7 +20,7 @@
                 
             </div>
 
-    </div>
+    <!-- </div> -->
 
     <!-- GRID ANIMALES + HISTORIA -->
 
@@ -43,7 +43,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-                <img src="/public/habitantesCabrasImages/3.png" alt="primer plano cara vaca" class="object-cover mb-4">
+                <img src="/public/HabitantesCabrasImages/3.png" alt="primer plano cara vaca" class="object-cover mb-4">
                 <h3 class="text-bold text-2xl text-center mx-12 my-6 text-[#47462d]">Valentina</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6">Valentina fue rescatada de un mercado ilegal, donde era tratada como una simple mercancía. Ahora, es conocida por ser una de las más cariñosas del grupo, siempre buscando mimos y atención de los visitantes.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12">Amadríname</button>
@@ -51,7 +51,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-                <img src="/public/habitantesCabrasImages/4.png" alt="vaca tumbada" class="object-cover mb-4">
+                <img src="/public/HabitantesCabrasImages/4.png" alt="vaca tumbada" class="object-cover mb-4">
                 <h3 class="text-bold text-2xl text-center mx-12 my-6 text-[#47462d]">Aurora</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6">Aurora llegó al santuario después de haber sido herida en un accidente. Su recuperación fue lenta, pero con cuidados amorosos, volvió a caminar con confianza. Es un símbolo viviente de perseverancia.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12">Amadríname</button>
@@ -59,7 +59,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-                <img src="/public/habitantesCabrasImages/5.png" alt="primer plano vaca marrón y blanca" class="object-cover mb-4">
+                <img src="/public/HabitantesCabrasImages/5.png" alt="primer plano vaca marrón y blanca" class="object-cover mb-4">
                 <h3 class="text-bold text-2xl text-center mx-12 my-6 text-[#47462d]">Canela</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6">Canela fue encontrada sola, vagando por un campo después de que su rebaño fuera vendido. Ahora vive rodeada de amigas en el santuario y es conocida por su amor por los árboles frutales.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12">Amadríname</button>
@@ -67,7 +67,7 @@
         
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-                <img src="/public/habitantesCabrasImages/6.png" alt="primer plano vaca cara blanca" class="object-cover mb-4">
+                <img src="/public/HabitantesCabrasImages/6.png" alt="primer plano vaca cara blanca" class="object-cover mb-4">
                 <h3 class="text-bold text-2xl text-center mx-12 my-6 text-[#47462d]">Blanquita</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6">Blanquita pasó sus primeros meses de vida encerrada en un establo oscuro. Cuando fue rescatada, apenas podía ver la luz del sol. Ahora, no hay día que no salga al campo a disfrutar de la brisa y los rayos del sol.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12">Amadríname</button>
@@ -75,14 +75,14 @@
 
 
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ml-20">
-                <img src="/public/habitantesCabrasImages/7.png" alt="primer plano toro marrón" class="object-cover mb-4">
+                <img src="/public/HabitantesCabrasImages/7.png" alt="primer plano toro marrón" class="object-cover mb-4">
                 <h3 class="text-bold text-2xl text-center mx-12 my-6 text-[#47462d]">Nina</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6">Nina fue rescatada de una granja donde era explotada por su leche. Llegó al santuario exhausta, pero con el tiempo recuperó su energía y ahora es la líder del grupo, siempre guiando a las demás cabritas.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12">Amadríname</button>
             </div>
         
             <div class="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between hover:scale-105 transition-transform duration-300 mr-20">
-                <img src="/public/habitantesCabrasImages/8.png" alt="perfil toro marrón" class="object-cover mb-4">
+                <img src="/public/HabitantesCabrasImages/8.png" alt="perfil toro marrón" class="object-cover mb-4">
                 <h3 class="text-bold text-2xl text-center mx-12 my-6 text-[#47462d]">Luna</h3>
                 <h4 class="text-justify text-[#47462d] mx-12 my-6">Luna fue abandonada a su suerte en un bosque cercano. Estaba asustada y sola, pero su vida cambió cuando fue acogida por la fundación. Ahora, es conocida por sus saltos y juegos en los prados del santuario.</h4>
                 <button type="submit" class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12">Amadríname</button>

@@ -6,13 +6,13 @@
       <!-- Iconos redes sociales -->
       <div class="SocialMedia flex flex-row justify-center gap-10 items-center py-2">
         <button class="Instagram">
-          <img src="../public/instagram-brands-solid.svg" alt="icono instagram" class="w-8">
+          <img src="/instagram-brands-solid.svg" alt="icono instagram" class="w-8">
         </button>
         <button class="Facebook">
-          <img src="../public/facebook-brands-solid.svg" alt="icono facebook" class="w-8">
+          <img src="/facebook-brands-solid.svg" alt="icono facebook" class="w-8">
         </button>
         <button class="Twitter">
-          <img src="../public/twitter-brands-solid.svg" alt="icono twitter" class="w-8">
+          <img src="/twitter-brands-solid.svg" alt="icono twitter" class="w-8">
         </button>
       </div>
 
@@ -113,13 +113,13 @@
             <h3 class="footer_subtitle text-2xl underline">Redes sociales:</h3>
             <div class="footer_social_link_body flex space-x-4 mb-4">
               <a href="" class="footer_social_link pb-3 text-xl justify-items-start">
-                <img src="../public/instagram_claro.svg" alt="logo instagram" class="social_media-link-img w-8 h-8">
+                <img src="/instagram_claro.svg" alt="logo instagram" class="social_media-link-img w-8 h-8">
               </a>
               <a href="" class="footer_social_link pb-3">
-                <img src="../public/facebook-clarito.svg" alt="logo instagram" class="social_media-link-img w-8 h-8">
+                <img src="/facebook-clarito.svg" alt="logo instagram" class="social_media-link-img w-8 h-8">
               </a>
               <a href="" class="footer_social_link pb-3">
-                <img src="../public/twitter-clarito.svg" alt="logo instagram" class="social_media-link-img w-8 h-8">
+                <img src="/twitter-clarito.svg" alt="logo instagram" class="social_media-link-img w-8 h-8">
               </a>
             </div>
 
@@ -176,7 +176,7 @@
             </li>
             <li class="footer_contact-item">
               <a href="000 999 888 765" class="footer_phone-link flex items-center">
-                <img src="../public/phone-solid.svg" alt="icono teléfono" class="w-6 mr-2">
+                <img src="/phone-solid.svg" alt="icono teléfono" class="w-6 mr-2">
                 <p class="footer_contact-subtitle">
                   Rescates: 000 999 888 765
                 </p>
@@ -184,7 +184,7 @@
             </li>
             <li class="footer_contact-item">
               <a href="000 999 888 756" class="footer_phone-link flex items-center">
-                <img src="../public/phone-solid.svg" alt="icono teléfono" class="w-6 mr-2">
+                <img src="/phone-solid.svg" alt="icono teléfono" class="w-6 mr-2">
                 <p class="footer_contact-subtitle">
                   Información: 000 999 888 756
                 </p>
@@ -192,13 +192,13 @@
             </li>
             <li class="footer_contact-item">
               <a href="mailto:info@pato.com" class="footer_mail-link flex items-center">
-                <img src="../public/envelope-solid.svg" alt="icono correo electrónico" class="w-6 mr-2">
+                <img src="/envelope-solid.svg" alt="icono correo electrónico" class="w-6 mr-2">
                 <p class="footer_mail-subtitle"> info@pato.com</p>
               </a>
             </li>
             <li class="footer_contact-item">
               <a href="" class="footer_contact-link flex items-center">
-                <img src="../public/location-dot-solid.svg" alt="icono ubicación" class="w-6">
+                <img src="/location-dot-solid.svg" alt="icono ubicación" class="w-6">
                 <p class="footer_location-subtitle ml-2">Dónde nos encontramos:</p>
               </a>
             </li>
@@ -215,7 +215,7 @@
 </template>
 
 <script>
-import { useRouter } from 'view-router';
+import { useRouter } from 'vue-router';
 import desplegable from './components/desplegable.vue';
 import { ref } from 'vue';
 
