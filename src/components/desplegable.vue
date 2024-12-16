@@ -3,12 +3,12 @@
 
 <!-- <nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10"> -->
     <nav class="navbar flex flex-wrap justify-between items-center px-4 py-2 gap-10">
-      <!-- Botón con menú desplegable -->
-      <button 
+    <!-- Botón con menú desplegable -->
+    <!-- <button 
         class="hamburger md:hidden px-4 py-2 text-lg focus:outline-none"  
         @click="toggleMobileMenu">
         ☰
-      </button>
+    </button> -->
     
 <!-- Botón con menú desplegable -->
 <!-- Menú completo (escondido en pantallas pequeñas) -->

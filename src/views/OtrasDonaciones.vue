@@ -151,7 +151,7 @@ export default {
         ]);
 
         const selectedItem = ref(null);
-        const videoSource = '/OtrasDonacionesImages/voluntariavideo.mp4';
+        const videoSource = '/public/OtrasDonacionesImages/videovoluntaria.mp4';
         const router = useRouter();
 
         const toggleCard = (index) => {
