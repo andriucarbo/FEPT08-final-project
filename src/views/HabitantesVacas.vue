@@ -44,7 +44,7 @@
                 el sol junto a su inseparable amiga Olivia.</h4>
 
             <button type="submit"
-                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl">Amadríname</button>
+                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
         </div>
 
 
@@ -59,7 +59,7 @@
                 seguida por su fiel compañero, un perro llamado Max.</h4>
 
             <button type="submit"
-                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl">Amadríname</button>
+                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
         </div>
 
 
@@ -73,7 +73,7 @@
                 disfruta de largas siestas bajo los árboles y es la primera en acudir cuando los cuidadores traen fruta
                 fresca.</h4>
             <button type="submit"
-                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl">Amadríname</button>
+                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
         </div>
 
 
@@ -87,7 +87,7 @@
                 adecuada. Hoy, Valeria es conocida por su dulzura y le encanta recibir caricias de los visitantes del
                 santuario.</h4>
             <button type="submit"
-                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl">Amadríname</button>
+                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
         </div>
 
 
@@ -101,7 +101,7 @@
                 estrés postraumático. Con mucha paciencia y terapia, Manuela aprendió a confiar de nuevo. Ahora es la
                 protectora del grupo y siempre está pendiente de los nuevos rescatados que llegan al santuario.</h4>
             <button type="submit"
-                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl">Amadríname</button>
+                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
         </div>
 
 
@@ -116,7 +116,7 @@
                 Clara comenzó a recuperar su salud y confianza. Hoy en día, es una vaca feliz que disfruta de paseos por
                 el campo y juega con sus amigos.</h4>
             <button type="submit"
-                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl">Amadríname</button>
+                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
         </div>
 
 
@@ -129,7 +129,7 @@
                 cuidados intensivos y a la dedicación del equipo del santuario, Emilio sobrevivió. Hoy es un toro joven
                 y juguetón que adora corretear por los prados y darse baños de barro en los días calurosos.</h4>
             <button type="submit"
-                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl">Amadríname</button>
+                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
         </div>
 
         <div
@@ -142,7 +142,7 @@
                 conocido por su carácter tranquilo y le encanta tumbarse al sol mientras los pájaros se posan sobre su
                 lomo.</h4>
             <button type="submit"
-                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl">Amadríname</button>
+                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 mt-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
         </div>
 
 
@@ -156,7 +156,7 @@
                 meses de cuidados y atención, Freser y Catalina se recuperaron por completo. Ahora son inseparables y
                 pasan sus días explorando juntos los prados del santuario.</h4>
             <button type="submit"
-                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 my-12 text-2xl">Amadríname</button>
+                class="w-full bg-[#47462d]/50 text-white p-2 rounded-md hover:bg-[#47462d] transition duration-300 my-12 text-2xl" @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
         </div>
     </div>
 

@@ -29,7 +29,8 @@
 
       <!-- BOTÓN FIJO PARA HACER SCROLL -->
       <div>
-        <button @click="scrollToTop"
+        <button 
+          @click="scrollToTop" 
           :class="['text-4xl fixed bottom-24 right-12 bg-[#47462d]/50 text-white p-3 rounded-full shadow-md hover:bg-[#47462d] transition duration-300', showButton ? 'block' : 'hidden']">
           ↑
         </button>

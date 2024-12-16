@@ -144,7 +144,7 @@
 
         <div class="buttonContainer flex justify-center w-full mt-8">
             <!-- Botón que lleva al mensaje -->
-                <button class="buttontienda text-xl p-4 text-[#857a5c] rounded hover:bg-neutral-50 hover:text-[#857a5c] focus:outline-none ml-auto mr-36 mb-36">Accede a nuestra tienda</button>
+                <button class="buttontienda text-xl p-4 text-[#857a5c] rounded hover:bg-neutral-50 hover:text-[#857a5c] focus:outline-none ml-auto mr-36 mb-36"  @click="navigateTo('/PaginaEnConstruccion')">Accede a nuestra tienda</button>
             </div>
     </div>
 </template>

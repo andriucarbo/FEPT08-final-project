@@ -7,7 +7,7 @@
             <div class="text">
                 <h2>Platero</h2>
                 <p>Platero (el guaperas de la izquierda) es un burro que nació en una explotación de ovejas de Girona. El pastor había...</p>
-                <button class="btn text-l p-3 mt-5 bg-[#857a5c] text-slate-50 rounded hover:text-slate-50 hover:bg-[#6e654c] focus:outline-none ">Amadríname</button>
+                <button class="btn text-l p-3 mt-5 bg-[#857a5c] text-slate-50 rounded hover:text-slate-50 hover:bg-[#6e654c] focus:outline-none "@click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
             </div>
         </div>
 
@@ -18,7 +18,7 @@
             <div class="text">
                 <h2>Nugget</h2>
                 <p>Nugget llegó al refugio en un penoso estado de salud.Como muchas gallinas, fue fruto de una explotación... .</p>
-                <button class="btn text-l p-3 mt-5 bg-[#857a5c] text-slate-50 rounded  hover:text-slate-50 hover:bg-[#6e654c] focus:outline-none ">Amadríname</button>
+                <button class="btn text-l p-3 mt-5 bg-[#857a5c] text-slate-50 rounded  hover:text-slate-50 hover:bg-[#6e654c] focus:outline-none " @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
             </div>
         </div>
 
@@ -29,7 +29,7 @@
             <div class="text">
                 <h2>Margot</h2>
                 <p>Margot es una corderita rescatada de una explotación en la que también estaba su madre, pero ésta murió antes de...</p>
-                <button class="btn text-l p-3 mt-5 bg-[#857a5c] text-slate-50 rounded hover:text-slate-50 hover:bg-[#6e654c] focus:outline-none ">Amadríname</button>
+                <button class="btn text-l p-3 mt-5 bg-[#857a5c] text-slate-50 rounded hover:text-slate-50 hover:bg-[#6e654c] focus:outline-none " @click="navigateTo('/Colabora/FormularioAmadrina')">Amadríname</button>
             </div>
         </div>
         
@@ -37,6 +37,8 @@
 </template>
 
 <script>
+import { useRouter } from 'vue-router';
+
 export default {
     mounted() {
     const cards = document.querySelectorAll('.card');
@@ -46,16 +48,16 @@ export default {
         cards.forEach(c => c.querySelector('.text').style.display = 'none');
         text.style.display = 'block';
         });
-    });
+    })
+},
+setup() { 
+        const router = useRouter(); 
+        const navigateTo = (route) => { 
+            router.push(route); 
+        }; return { navigateTo 
 
-    // cards.forEach((card) => {
-    // card.addEventListener('mouseout', () => {
-    //     const text = card.querySelector('.text');
-    //     text.style.display = 'none';
-    // });
-    // });
-    // ANULO ESTE CÓDIGO PORQUE DESAPARECÍA EL TEXTO SI EL CURSOR SALÍA DE LA CARD...NO PODÍAN HACER CLICK EN AMADRÍNAME 
-}
+        }; 
+    },
 }
 </script>
 <style>

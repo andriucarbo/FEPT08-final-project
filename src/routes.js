@@ -19,6 +19,7 @@ import HabitantesCerdos from "./views/HabitantesCerdos.vue"
 import HabitantesBurros from "./views/HabitantesBurros.vue"
 import HabitantesCabras from "./views/HabitantesCabras.vue"
 import PaginaEnConstruccion from "./views/PaginaEnConstruccion.vue"
+import FormularioAmadrina from "./views/FormularioAmadrina.vue"
 
 // firebase vista
 import Familia from'./views/Familia.vue'
@@ -65,6 +66,10 @@ const routes = [
             {
                 path:'OtrasDonaciones',
                 component:OtrasDonaciones
+            },
+            {
+                path:'FormularioAmadrina',
+                component:FormularioAmadrina
             },
         ]
         },
