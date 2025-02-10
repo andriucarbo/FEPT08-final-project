@@ -91,7 +91,7 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más 
 
 # Contacto
 
-- Nombre del Desarrollador - Andrea Carbó + Vanessa Cortés
+- Nombre del Desarrollador - Andrea Carbó https://www.linkedin.com/in/andrea-c-marcos-2746502bb/ + Vanessa Cortés
 - Link del Proyecto: https://github.com/andriucarbo/FEPT08-final-project
 
 _____________________________________________________________________________________________________
